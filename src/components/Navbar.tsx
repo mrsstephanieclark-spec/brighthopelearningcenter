@@ -15,7 +15,7 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur-md border-b border-ink/10 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24 py-2">
           
           {/* Logo */}
           <a 
@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
             <img 
               src="/assets/logo-horizontal.png" 
               alt="Bright Hope Learning Center" 
-              className="h-10 sm:h-11 w-auto object-contain" 
+              className="h-14 sm:h-15 lg:h-[60px] w-auto object-contain" 
             />
           </a>
 
