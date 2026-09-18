@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
+import { TourModal } from '../components/TourModal';
 import { Sun, Heart, Sparkles, Award, Compass, ShieldCheck, Activity, MessageSquare, ChevronDown, Clock } from 'lucide-react';
 
 interface FAQItem {
@@ -11,6 +12,7 @@ interface FAQItem {
 
 export const ProgramsPage: React.FC = () => {
   const [openFAQId, setOpenFAQId] = useState<string | null>('faq-1');
+  const [isTourModalOpen, setIsTourModalOpen] = useState(false);
 
   const toggleFAQ = (id: string) => {
     setOpenFAQId(prev => (prev === id ? null : id));
@@ -75,13 +77,14 @@ export const ProgramsPage: React.FC = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                <a
-                  href="/#paths"
-                  className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-ink outline-none"
+                <button
+                  type="button"
+                  onClick={() => setIsTourModalOpen(true)}
+                  className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-ink outline-none cursor-pointer"
                 >
                   <Heart className="w-5 h-5 fill-ink/20 text-ink" />
                   <span>Request a Tour</span>
-                </a>
+                </button>
 
                 <a
                   href="#therapies"
@@ -425,6 +428,9 @@ export const ProgramsPage: React.FC = () => {
         </section>
 
       </main>
+
+      {/* Shared Reusable TourModal */}
+      <TourModal isOpen={isTourModalOpen} onClose={() => setIsTourModalOpen(false)} />
 
       {/* Shared Footer Component */}
       <Footer />
