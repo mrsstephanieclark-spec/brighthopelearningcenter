@@ -55,12 +55,20 @@ export const InchstonesSection: React.FC = () => {
   ];
 
   return (
-    <section id="inchstones" className="py-16 md:py-24 bg-paper-raised border-y border-ink/10 transition-colors duration-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="inchstones" className="py-16 md:py-24 bg-pink/10 dark:bg-pink/15 border-y border-pink/20 transition-colors duration-200 relative overflow-hidden">
+      
+      {/* Decorative background path motif line */}
+      <div className="absolute top-4 left-0 right-0 hidden md:block pointer-events-none opacity-20">
+        <svg className="w-full h-8 text-pink" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M 0,20 C 300,5 600,35 900,15 C 1050,5 1150,25 1200,20" stroke="currentColor" strokeWidth="2.5" strokeDasharray="6 6" />
+        </svg>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16 flex flex-col items-center">
-          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-gold bg-gold/15 px-3.5 py-1.5 rounded-full border border-gold/30 text-ink mb-6">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-gold bg-gold/20 px-3.5 py-1.5 rounded-full border border-gold/40 text-ink mb-6 shadow-xs">
             Our word for it
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink mb-5">
@@ -77,7 +85,7 @@ export const InchstonesSection: React.FC = () => {
             {inchstones.map((card) => (
               <div
                 key={card.id}
-                className="snap-item shrink-0 w-[280px] sm:w-[320px] p-6 rounded-2xl bg-paper border border-ink/10 shadow-sm hover:shadow-md transition-all duration-200 flex flex-col justify-between text-left"
+                className="snap-item shrink-0 w-[280px] sm:w-[320px] p-6 rounded-2xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between text-left"
               >
                 <div>
                   <div className={`w-12 h-12 rounded-xl ${card.badgeBg} ${card.badgeColor} flex items-center justify-center mb-4`}>

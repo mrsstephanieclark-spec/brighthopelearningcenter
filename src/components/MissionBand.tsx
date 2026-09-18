@@ -13,7 +13,7 @@ export const MissionBand: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 md:py-20 bg-paper transition-colors duration-200">
+    <section className="py-16 md:py-20 bg-paper transition-colors duration-200 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Card */}
@@ -74,6 +74,13 @@ export const MissionBand: React.FC = () => {
 
         </div>
 
+      </div>
+
+      {/* Decorative connecting path line leading into the next section */}
+      <div className="mt-12 hidden md:block pointer-events-none opacity-30">
+        <svg className="w-full h-8 text-blue" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M 0,15 C 350,35 700,5 1200,25" stroke="currentColor" strokeWidth="2.5" strokeDasharray="6 6" />
+        </svg>
       </div>
     </section>
   );
