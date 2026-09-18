@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const InstagramIcon: React.FC<{ className?: string }> = ({ className = "w-5 h-5" }) => (
   <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -121,18 +121,14 @@ export const Footer: React.FC = () => {
         {/* Dashed Top Divider */}
         <div className="border-t border-dashed border-ink/20 pt-8 mt-8 space-y-4 text-xs font-sans text-ink/70 text-left">
           
-          {/* Non-Discrimination Disclaimer with visually flagged Placeholder Badge */}
-          <div className="p-4 rounded-xl bg-paper border border-dashed border-gold/60 space-y-2">
-            <div className="flex items-center gap-2 text-ink font-bold">
-              <span className="inline-flex items-center gap-1 bg-gold/20 text-ink text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-gold/50">
-                <AlertCircle className="w-3 h-3 text-ink" />
-                Placeholder
-              </span>
-              <span>IRS Non-Discrimination Policy</span>
-            </div>
+          {/* NOTE: Standard non-discrimination statement wording. Kerry/legal counsel should explicitly review and sign off on exact wording before official production launch. */}
+          <div className="p-4 rounded-xl bg-paper border border-ink/10 space-y-1.5">
+            <h5 className="font-bold text-ink text-xs uppercase tracking-wider">
+              IRS Non-Discrimination Policy
+            </h5>
 
-            <p className="leading-relaxed">
-              Bright Hope Learning Center does not discriminate on the basis of race, color, national origin, sex, disability, or age in its programs and activities. [Exact IRS non-discrimination policy wording pending — replace before launch.]
+            <p className="leading-relaxed text-ink/75">
+              Bright Hope Learning Center admits students of any race, color, national origin, and ethnic origin to all the rights, privileges, programs, and activities generally made available to students. It does not discriminate on the basis of race, color, national origin, sex, disability, or ethnic origin in the administration of its educational policies, admissions policies, and other school-administered programs.
             </p>
           </div>
 
