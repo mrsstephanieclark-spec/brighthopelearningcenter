@@ -1,5 +1,5 @@
 import React from 'react';
-import { Compass, Heart, Sun, BookOpen } from 'lucide-react';
+import { Compass, Heart, Sun } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
@@ -61,36 +61,16 @@ export const Hero: React.FC = () => {
 
           </div>
 
-          {/* Right Column: Photo Area Placeholder */}
+          {/* Right Column: Photo Area */}
           <div className="lg:col-span-5 w-full">
             <div className="relative rounded-3xl p-3 bg-paper-raised border border-ink/10 shadow-xl">
-              
-              {/* Contained Photo Placeholder Panel */}
-              <div 
-                className="w-full aspect-[4/3] rounded-2xl border-2 border-dashed border-blue/40 bg-paper/60 p-6 flex flex-col items-center justify-center text-center relative overflow-hidden group"
-                style={{
-                  backgroundImage: `repeating-linear-gradient(45deg, rgba(46, 134, 193, 0.05) 0, rgba(46, 134, 193, 0.05) 15px, rgba(253, 186, 45, 0.05) 15px, rgba(253, 186, 45, 0.05) 30px)`
-                }}
-              >
-                {/* Decorative Icon */}
-                <div className="w-16 h-16 rounded-full bg-blue/10 border border-blue/20 flex items-center justify-center mb-4 text-blue shadow-inner">
-                  <BookOpen className="w-8 h-8 text-blue" />
-                </div>
-
-                <p className="font-heading font-bold text-ink/80 text-lg mb-1">
-                  Real Bright Hope photo goes here
-                </p>
-                
-                <p className="text-xs text-ink/60 max-w-xs font-sans">
-                  Reserved for photography following client photo day (classroom, therapy session, or joyful student moment).
-                </p>
-
-                {/* Badge Tag */}
-                <span className="absolute top-4 right-4 bg-gold/20 text-ink text-xs font-bold px-3 py-1 rounded-full border border-gold/40">
-                  Placeholder
-                </span>
+              <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden relative">
+                <img 
+                  src="/assets/images/hero-therapy-session.jpg" 
+                  alt="A Bright Hope staff member helping a young student practice pre-writing skills." 
+                  className="w-full h-full object-cover object-center rounded-2xl" 
+                />
               </div>
-
             </div>
           </div>
 
