@@ -37,15 +37,15 @@ export const MissionBand: React.FC = () => {
               </blockquote>
 
               {/* 7 Value Pill Tags */}
-              <div className="pt-4 space-y-2">
+              <div className="pt-4 space-y-3">
                 <p className="text-xs font-bold text-ink/60 uppercase tracking-widest font-sans">
                   Walked out through our core values:
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2.5 sm:gap-3">
                   {valueNames.map((val) => (
                     <span
                       key={val.name}
-                      className={`text-xs font-bold px-3 py-1 rounded-full border border-ink/10 ${val.color}`}
+                      className={`text-sm sm:text-base font-bold px-4 py-2 sm:px-4.5 sm:py-2 rounded-full border border-ink/15 shadow-xs transition-transform hover:scale-105 ${val.color}`}
                     >
                       {val.name}
                     </span>
