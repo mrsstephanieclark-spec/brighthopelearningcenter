@@ -94,14 +94,14 @@ export const ValuesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-blue bg-blue/10 px-3.5 py-1.5 rounded-full border border-blue/20">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16 flex flex-col items-center">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-blue bg-blue/10 px-3.5 py-1.5 rounded-full border border-blue/20 mb-6">
             What guides every inchstone
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink mb-5">
             Seven values, walked out one step at a time.
           </h2>
-          <p className="text-base sm:text-lg text-ink/75 font-sans pt-1">
+          <p className="text-base sm:text-lg text-ink/75 font-sans">
             Our logo's open book already draws a path toward the light — these are the seven stones that make it up. Tap one.
           </p>
         </div>
