@@ -59,14 +59,14 @@ export const InchstonesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-          <span className="text-xs sm:text-sm font-bold tracking-widest uppercase text-gold bg-gold/15 px-3.5 py-1.5 rounded-full border border-gold/30 text-ink">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16 flex flex-col items-center">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-gold bg-gold/15 px-3.5 py-1.5 rounded-full border border-gold/30 text-ink mb-6">
             Our word for it
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink mb-5">
             Every "inchstone" matters.
           </h2>
-          <p className="text-base sm:text-lg text-ink/80 font-sans pt-1">
+          <p className="text-base sm:text-lg text-ink/80 font-sans">
             Not every win is a milestone. Some are inches — and we celebrate every one.
           </p>
         </div>
