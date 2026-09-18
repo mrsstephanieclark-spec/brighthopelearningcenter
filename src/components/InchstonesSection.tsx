@@ -107,13 +107,6 @@ export const InchstonesSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Small Italic Caption */}
-        <div className="mt-8 text-center">
-          <p className="text-xs sm:text-sm italic font-sans text-ink/65">
-            Placeholder examples — swap in real, family-approved inchstones as they happen.
-          </p>
-        </div>
-
       </div>
     </section>
   );
