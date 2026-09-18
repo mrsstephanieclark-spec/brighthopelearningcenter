@@ -79,38 +79,36 @@ export const InchstonesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Horizontal Scroll Container (Touch Swipe / Touch friendly) */}
-        <div className="relative">
-          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 snap-x-container scrollbar-thin scrollbar-thumb-gold/50 scrollbar-track-transparent">
-            {inchstones.map((card) => (
-              <div
-                key={card.id}
-                className="snap-item shrink-0 w-[280px] sm:w-[320px] p-6 rounded-2xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between text-left"
-              >
-                <div>
-                  <div className={`w-12 h-12 rounded-xl ${card.badgeBg} ${card.badgeColor} flex items-center justify-center mb-4`}>
-                    {card.icon}
-                  </div>
-
-                  <h3 className="text-xl font-bold font-heading text-ink mb-2">
-                    {card.title}
-                  </h3>
-
-                  <p className="text-sm text-ink/80 leading-relaxed font-sans">
-                    {card.description}
-                  </p>
+        {/* Responsive Responsive Grid Container — No Horizontal Scrollbar */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 items-stretch">
+          {inchstones.map((card) => (
+            <div
+              key={card.id}
+              className="p-6 rounded-2xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between text-left h-full"
+            >
+              <div>
+                <div className={`w-12 h-12 rounded-xl ${card.badgeBg} ${card.badgeColor} flex items-center justify-center mb-4`}>
+                  {card.icon}
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-ink/10 flex items-center gap-1.5 text-xs text-green font-bold">
-                  <span>✦ Celebrating growth</span>
-                </div>
+                <h3 className="text-xl font-bold font-heading text-ink mb-2">
+                  {card.title}
+                </h3>
+
+                <p className="text-sm text-ink/80 leading-relaxed font-sans">
+                  {card.description}
+                </p>
               </div>
-            ))}
-          </div>
+
+              <div className="mt-6 pt-4 border-t border-ink/10 flex items-center gap-1.5 text-xs text-green font-bold">
+                <span>✦ Celebrating growth</span>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Small Italic Caption */}
-        <div className="mt-6 text-center">
+        <div className="mt-8 text-center">
           <p className="text-xs sm:text-sm italic font-sans text-ink/65">
             Placeholder examples — swap in real, family-approved inchstones as they happen.
           </p>
