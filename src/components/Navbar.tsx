@@ -5,11 +5,12 @@ export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'For Families', href: '#paths' },
-    { name: 'Our Values', href: '#values' },
-    { name: 'Inchstones', href: '#inchstones' },
-    { name: 'Get Involved', href: '#give' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'For Families', href: '/#paths' },
+    { name: 'Our Values', href: '/#values' },
+    { name: 'Programs & Services', href: '/programs' },
+    { name: 'Inchstones', href: '/#inchstones' },
+    { name: 'Get Involved', href: '/#give' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   return (
@@ -19,7 +20,7 @@ export const Navbar: React.FC = () => {
           
           {/* Logo */}
           <a 
-            href="#" 
+            href="/" 
             className="flex items-center gap-2 rounded-lg focus-visible:ring-2 focus-visible:ring-gold outline-none"
             aria-label="Bright Hope Learning Center Home"
           >
