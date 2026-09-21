@@ -5,11 +5,11 @@ export const MissionBand: React.FC = () => {
   const valueNames = [
     { name: 'Faith', color: 'bg-blue/15 text-blue' },
     { name: 'Hope', color: 'bg-gold/25 text-ink' },
-    { name: 'Love', color: 'bg-pink/15 text-pink' },
+    { name: 'Love', color: 'bg-green/15 text-green' },
     { name: 'Community', color: 'bg-blue/15 text-blue' },
     { name: 'Celebration', color: 'bg-gold/25 text-ink' },
-    { name: 'Innovation', color: 'bg-green/15 text-green' },
-    { name: 'Stewardship', color: 'bg-red/15 text-red' },
+    { name: 'Innovation', color: 'bg-green-secondary/15 text-green-secondary' },
+    { name: 'Stewardship', color: 'bg-green/15 text-green' },
   ];
 
   return (

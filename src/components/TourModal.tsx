@@ -110,7 +110,7 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
             {/* Parent/Guardian Name (Required) */}
             <div>
               <label htmlFor="parentName" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
-                Parent/Guardian Name <span className="text-red">*</span>
+                Parent/Guardian Name <span className="text-blue">*</span>
               </label>
               <input
                 type="text"
@@ -127,7 +127,7 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
             {/* Email (Required) */}
             <div>
               <label htmlFor="email" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
-                Email Address <span className="text-red">*</span>
+                Email Address <span className="text-blue">*</span>
               </label>
               <input
                 type="email"
@@ -161,7 +161,7 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
               {/* Child's Age (Required) */}
               <div>
                 <label htmlFor="childAge" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
-                  Child's Age <span className="text-red">*</span>
+                  Child's Age <span className="text-blue">*</span>
                 </label>
                 <input
                   type="text"

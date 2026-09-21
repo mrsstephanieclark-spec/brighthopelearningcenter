@@ -36,9 +36,9 @@ export const GiveBand: React.FC = () => {
                 href="https://givebutter.com/bhlc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-white outline-none"
+                className="inline-flex items-center justify-center gap-2 bg-green hover:bg-green/90 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-gold outline-none"
               >
-                <Heart className="w-5 h-5 fill-ink/20 text-ink" />
+                <Heart className="w-5 h-5 fill-white/20 text-white" />
                 <span>Join Hopebuilders</span>
                 <ExternalLink className="w-4 h-4 opacity-70" />
               </a>
@@ -47,7 +47,7 @@ export const GiveBand: React.FC = () => {
                 href="https://givebutter.com/bhlc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/80 hover:bg-white/10 text-white font-bold px-7 py-3.5 rounded-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-white outline-none"
+                className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-7 py-3.5 rounded-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-gold outline-none"
               >
                 <span>Give once</span>
                 <ExternalLink className="w-4 h-4 opacity-70" />

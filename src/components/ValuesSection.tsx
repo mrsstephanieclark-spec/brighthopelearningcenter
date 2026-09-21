@@ -5,7 +5,7 @@ interface ValueItem {
   name: string;
   tagline: string;
   description: string;
-  colorName: 'blue' | 'gold' | 'pink' | 'green' | 'red';
+  colorName: 'blue' | 'gold' | 'green' | 'green-secondary';
   colorHex: string;
   bgHex: string;
   borderHex: string;
@@ -19,9 +19,9 @@ export const ValuesSection: React.FC = () => {
       tagline: 'Trusting God in every step',
       description: 'We believe God has a purpose for every child and faithfully pursue excellence, trusting Him to accomplish more than we can imagine.',
       colorName: 'blue',
-      colorHex: '#2E86C1',
-      bgHex: 'rgba(46, 134, 193, 0.1)',
-      borderHex: '#2E86C1',
+      colorHex: '#0B4EA2',
+      bgHex: 'rgba(11, 78, 162, 0.1)',
+      borderHex: '#0B4EA2',
     },
     {
       id: 'hope',
@@ -29,19 +29,19 @@ export const ValuesSection: React.FC = () => {
       tagline: 'Seeing possibility beyond diagnosis',
       description: 'We believe every child has God-given potential, and we inspire hope by focusing on possibilities rather than limitations.',
       colorName: 'gold',
-      colorHex: '#FDBA2D',
-      bgHex: 'rgba(253, 186, 45, 0.15)',
-      borderHex: '#FDBA2D',
+      colorHex: '#FFD200',
+      bgHex: 'rgba(255, 210, 0, 0.15)',
+      borderHex: '#FFD200',
     },
     {
       id: 'love',
       name: 'Love',
       tagline: 'The love of Christ',
       description: 'We love every child and family with the unconditional, compassionate love of Christ, seeing each person as uniquely created by God.',
-      colorName: 'pink',
-      colorHex: '#F05C9C',
-      bgHex: 'rgba(240, 92, 156, 0.1)',
-      borderHex: '#F05C9C',
+      colorName: 'green',
+      colorHex: '#7FBF3F',
+      bgHex: 'rgba(127, 191, 63, 0.1)',
+      borderHex: '#7FBF3F',
     },
     {
       id: 'community',
@@ -49,9 +49,9 @@ export const ValuesSection: React.FC = () => {
       tagline: 'Growing better together',
       description: 'We build meaningful relationships where children, families, staff, and community partners encourage and strengthen each other.',
       colorName: 'blue',
-      colorHex: '#2E86C1',
-      bgHex: 'rgba(46, 134, 193, 0.1)',
-      borderHex: '#2E86C1',
+      colorHex: '#0B4EA2',
+      bgHex: 'rgba(11, 78, 162, 0.1)',
+      borderHex: '#0B4EA2',
     },
     {
       id: 'celebration',
@@ -59,29 +59,29 @@ export const ValuesSection: React.FC = () => {
       tagline: 'Every "inchstone" matters',
       description: 'We joyfully celebrate every step forward. Even the smallest inchstone represents courage, growth, and God\'s faithfulness.',
       colorName: 'gold',
-      colorHex: '#FDBA2D',
-      bgHex: 'rgba(253, 186, 45, 0.15)',
-      borderHex: '#FDBA2D',
+      colorHex: '#FFD200',
+      bgHex: 'rgba(255, 210, 0, 0.15)',
+      borderHex: '#FFD200',
     },
     {
       id: 'innovation',
       name: 'Innovation',
       tagline: 'Creative solutions for every child',
       description: 'We embrace evidence-based practices, creativity, and collaboration to help every child learn, grow, and thrive.',
-      colorName: 'green',
-      colorHex: '#3FA34D',
-      bgHex: 'rgba(63, 163, 77, 0.1)',
-      borderHex: '#3FA34D',
+      colorName: 'green-secondary',
+      colorHex: '#2E7D32',
+      bgHex: 'rgba(46, 125, 50, 0.1)',
+      borderHex: '#2E7D32',
     },
     {
       id: 'stewardship',
       name: 'Stewardship',
       tagline: 'Faithful with every gift',
       description: 'We honor God by wisely managing every resource, relationship, and opportunity entrusted to us, maximizing our impact for children and families.',
-      colorName: 'red',
-      colorHex: '#E74C3C',
-      bgHex: 'rgba(231, 76, 60, 0.1)',
-      borderHex: '#E74C3C',
+      colorName: 'green',
+      colorHex: '#7FBF3F',
+      bgHex: 'rgba(127, 191, 63, 0.1)',
+      borderHex: '#7FBF3F',
     },
   ];
 

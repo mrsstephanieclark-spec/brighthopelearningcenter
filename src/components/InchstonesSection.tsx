@@ -41,8 +41,8 @@ export const InchstonesSection: React.FC = () => {
       title: 'First pretend play',
       description: 'Demonstrated pretend play for the first time — after many, many modeled opportunities.',
       icon: <Sparkles className="w-6 h-6" />,
-      badgeBg: 'bg-pink/15',
-      badgeColor: 'text-pink'
+      badgeBg: 'bg-green-secondary/15',
+      badgeColor: 'text-green-secondary'
     },
     {
       id: 'word',
@@ -59,7 +59,7 @@ export const InchstonesSection: React.FC = () => {
       
       {/* Decorative background path motif line */}
       <div className="absolute top-4 left-0 right-0 hidden md:block pointer-events-none opacity-20">
-        <svg className="w-full h-8 text-pink" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg className="w-full h-8 text-gold" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M 0,20 C 300,5 600,35 900,15 C 1050,5 1150,25 1200,20" stroke="currentColor" strokeWidth="2.5" strokeDasharray="6 6" />
         </svg>
       </div>

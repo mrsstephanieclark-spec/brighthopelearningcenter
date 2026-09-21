@@ -14,6 +14,7 @@ interface PathCardData {
   icon: React.ReactNode;
   external?: boolean;
   isFormTrigger?: boolean;
+  btnClass?: string;
 }
 
 export const PathSection: React.FC = () => {
@@ -24,46 +25,50 @@ export const PathSection: React.FC = () => {
       id: 'parent',
       title: "I'm a Parent",
       initials: 'P',
-      circleBg: 'bg-blue',
-      circleText: 'text-white',
+      circleBg: 'bg-gold',
+      circleText: 'text-ink',
       blurb: "Curious if Bright Hope is right for your child? Reach out and we'll set up a tour and a screening — no pressure, just a conversation.",
       linkLabel: 'Request a Tour',
       icon: <Calendar className="w-4 h-4" />,
-      isFormTrigger: true
+      isFormTrigger: true,
+      btnClass: 'bg-gold text-ink hover:bg-gold/90'
     },
     {
       id: 'donate',
       title: "I'd like to Donate",
       initials: '$',
-      circleBg: 'bg-gold',
-      circleText: 'text-ink',
+      circleBg: 'bg-green',
+      circleText: 'text-white',
       blurb: "Every gift goes straight to keeping this tuition-free for the families who need it most, through our Givebutter fund.",
       linkHref: 'https://givebutter.com/bhlc',
       linkLabel: 'Give on Givebutter',
       icon: <Heart className="w-4 h-4" />,
-      external: true
+      external: true,
+      btnClass: 'bg-green text-white hover:bg-green/90'
     },
     {
       id: 'volunteer',
       title: "I'd like to Volunteer",
       initials: 'V',
-      circleBg: 'bg-green',
+      circleBg: 'bg-blue',
       circleText: 'text-white',
       blurb: "Classrooms, events, and building needs all run better with volunteers who show up. Tell us your interests and experience.",
       linkHref: 'mailto:bhlc@brighthopelc.org',
       linkLabel: 'Email Us',
-      icon: <Users className="w-4 h-4" />
+      icon: <Users className="w-4 h-4" />,
+      btnClass: 'bg-blue text-white hover:bg-blue/90'
     },
     {
       id: 'career',
       title: "I'm exploring a Career",
       initials: 'C',
-      circleBg: 'bg-pink',
+      circleBg: 'bg-green-secondary',
       circleText: 'text-white',
       blurb: "Currently hiring a Nurse, Teacher Assistant, and part-time SLP — evidence-based practice, faith-rooted team.",
       linkHref: 'mailto:bhlc@brighthopelc.org',
       linkLabel: 'Email Your Resume',
-      icon: <Briefcase className="w-4 h-4" />
+      icon: <Briefcase className="w-4 h-4" />,
+      btnClass: 'bg-blue text-white hover:bg-blue/90'
     }
   ];
 
@@ -120,7 +125,7 @@ export const PathSection: React.FC = () => {
                     <button
                       type="button"
                       onClick={() => setIsModalOpen(true)}
-                      className="inline-flex items-center justify-center gap-2 bg-blue text-white font-bold px-4 py-2.5 rounded-xl text-sm hover:bg-blue/90 transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center cursor-pointer"
+                      className={`inline-flex items-center justify-center gap-2 ${card.btnClass || 'bg-gold text-ink hover:bg-gold/90'} font-bold px-4 py-2.5 rounded-xl text-sm transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center cursor-pointer`}
                     >
                       {card.icon}
                       <span>{card.linkLabel}</span>
@@ -140,7 +145,7 @@ export const PathSection: React.FC = () => {
                     href={card.linkHref}
                     target={card.external ? "_blank" : undefined}
                     rel={card.external ? "noopener noreferrer" : undefined}
-                    className="inline-flex items-center justify-center gap-2 bg-blue text-white font-bold px-4 py-2.5 rounded-xl text-sm hover:bg-blue/90 transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center"
+                    className={`inline-flex items-center justify-center gap-2 ${card.btnClass || 'bg-blue text-white hover:bg-blue/90'} font-bold px-4 py-2.5 rounded-xl text-sm transition-colors shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center`}
                   >
                     {card.icon}
                     <span>{card.linkLabel}</span>

@@ -4,11 +4,10 @@
   --font-sans: 'Lato', sans-serif;
   --font-heading: 'Poppins', sans-serif;
 
-  --color-gold: #FDBA2D;
-  --color-blue: #2E86C1;
-  --color-green: #3FA34D;
-  --color-pink: #F05C9C;
-  --color-red: #E74C3C;
+  --color-green: #7FBF3F;
+  --color-green-secondary: #2E7D32;
+  --color-gold: #FFD200;
+  --color-blue: #0B4EA2;
 
   --color-ink: var(--color-ink-val);
   --color-paper: var(--color-paper-val);
@@ -20,11 +19,10 @@
   --color-paper-val: #FFF8E7;
   --color-paper-raised-val: #FFFFFF;
 
-  --color-gold: #FDBA2D;
-  --color-blue: #2E86C1;
-  --color-green: #3FA34D;
-  --color-pink: #F05C9C;
-  --color-red: #E74C3C;
+  --color-green: #7FBF3F;
+  --color-green-secondary: #2E7D32;
+  --color-gold: #FFD200;
+  --color-blue: #0B4EA2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 *:focus-visible {
-  outline: 3px solid #FDBA2D;
+  outline: 3px solid #FFD200;
   outline-offset: 2px;
 }
 

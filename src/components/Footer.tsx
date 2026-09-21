@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Bright Hope Learning Center on Instagram"
-                className="p-3 rounded-full bg-paper border border-ink/10 text-ink hover:text-pink hover:border-pink transition-colors focus-visible:ring-2 focus-visible:ring-gold outline-none"
+                className="p-3 rounded-full bg-paper border border-ink/10 text-ink hover:text-green-secondary hover:border-green-secondary transition-colors focus-visible:ring-2 focus-visible:ring-gold outline-none"
               >
                 <InstagramIcon className="w-5 h-5" />
               </a>

@@ -48,8 +48,8 @@ export const CloserLookSection: React.FC = () => {
       imageSrc: '/assets/images/our-needs-square.jpg',
       imageAlt: 'Community volunteers standing together in support of Bright Hope Learning Center',
       linkHref: '/#give',
-      badgeColor: 'text-white bg-pink',
-      badgeText: 'text-pink',
+      badgeColor: 'text-white bg-green-secondary',
+      badgeText: 'text-green-secondary',
       icon: <Heart className="w-4 h-4" />
     }
   ];
@@ -61,7 +61,7 @@ export const CloserLookSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-gold text-ink px-3.5 py-1.5 rounded-full shadow-xs">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase bg-gold text-ink px-3.5 py-1.5 rounded-full shadow-xs">
             Explore Bright Hope
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -110,10 +110,10 @@ export const CloserLookSection: React.FC = () => {
               <div className="pt-2 mt-auto">
                 <a
                   href={card.linkHref}
-                  className="inline-flex items-center justify-center gap-2 bg-blue hover:bg-blue/90 text-white font-bold px-5 py-3 rounded-xl transition-all duration-200 text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center group/btn"
+                  className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-5 py-3 rounded-xl transition-all duration-200 text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center group/btn"
                 >
                   <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform text-ink" />
                 </a>
               </div>
             </div>

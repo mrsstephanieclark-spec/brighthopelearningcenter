@@ -143,7 +143,7 @@ export const ProgramsPage: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
-                  <ShieldCheck className="w-5 h-5 text-pink shrink-0" />
+                  <ShieldCheck className="w-5 h-5 text-green-secondary shrink-0" />
                   <span className="text-sm font-bold font-heading text-ink">100% Tuition-Free for Families</span>
                 </div>
               </div>
@@ -219,7 +219,7 @@ export const ProgramsPage: React.FC = () => {
           
           {/* Decorative path line */}
           <div className="absolute top-4 left-0 right-0 hidden md:block pointer-events-none opacity-20">
-            <svg className="w-full h-8 text-pink" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg className="w-full h-8 text-green" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M 0,20 C 300,5 600,35 900,15 C 1050,5 1150,25 1200,20" stroke="currentColor" strokeWidth="2.5" strokeDasharray="6 6" />
             </svg>
           </div>
@@ -227,7 +227,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-pink px-3.5 py-1.5 rounded-full shadow-xs">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green px-3.5 py-1.5 rounded-full shadow-xs">
                 Comprehensive Care
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -242,9 +242,9 @@ export const ProgramsPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
               {/* Occupational Therapy */}
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between">
+              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-green/50 transition-all duration-200 flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-pink/15 text-pink flex items-center justify-center font-bold mb-5">
+                  <div className="w-12 h-12 rounded-2xl bg-green/15 text-green flex items-center justify-center font-bold mb-5">
                     <Activity className="w-6 h-6" />
                   </div>
                   <h3 className="text-2xl font-bold font-heading text-ink mb-3">
@@ -254,13 +254,13 @@ export const ProgramsPage: React.FC = () => {
                     Occupational therapy helps children develop fine motor skills, sensory processing balance, and self-care abilities needed for daily life. From grasping a pencil to buttoning a coat or trying new textures, OT builds practical independence and motor confidence.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-pink flex items-center gap-1.5">
+                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-green flex items-center gap-1.5">
                   <span>✦ Fine Motor & Sensory Processing</span>
                 </div>
               </div>
 
               {/* Physical Therapy */}
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between">
+              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-200 flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-gold/25 text-ink flex items-center justify-center font-bold mb-5">
                     <Compass className="w-6 h-6 text-gold" />
@@ -278,7 +278,7 @@ export const ProgramsPage: React.FC = () => {
               </div>
 
               {/* Speech-Language Therapy */}
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between">
+              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-blue/50 transition-all duration-200 flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-blue/15 text-blue flex items-center justify-center font-bold mb-5">
                     <MessageSquare className="w-6 h-6 text-blue" />
@@ -355,7 +355,7 @@ export const ProgramsPage: React.FC = () => {
               </div>
 
               <div className="p-6 rounded-2xl bg-paper-raised border border-ink/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <div className="px-3.5 py-1.5 rounded-full bg-pink/15 text-pink font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-1.5">
+                <div className="px-3.5 py-1.5 rounded-full bg-green-secondary/15 text-green-secondary font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5" />
                   <span>Afternoon</span>
                 </div>
