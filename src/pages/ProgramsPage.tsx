@@ -338,8 +338,8 @@ export const ProgramsPage: React.FC = () => {
                   <span>Mid-Morning</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold font-heading text-ink">1-on-1 Individualized Therapy Sessions</h4>
-                  <p className="text-sm text-ink/80 font-sans mt-0.5">Targeted 1-on-1 sessions with licensed OT, PT, or Speech-Language Specialists tailored directly to each child's goal plan.</p>
+                  <h4 className="text-lg font-bold font-heading text-ink">Small-Group Therapeutic Sessions</h4>
+                  <p className="text-sm text-ink/80 font-sans mt-0.5">Targeted small-group sessions with licensed OT, PT, and Speech-Language specialists tailored to each child's goal plan. Individual 1-on-1 sessions occur selectively (particularly for physical therapy) based on specific developmental needs.</p>
                 </div>
               </div>
 
@@ -360,8 +360,8 @@ export const ProgramsPage: React.FC = () => {
                   <span>Afternoon</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold font-heading text-ink">Play-Based Skill Practice & Outdoor Time</h4>
-                  <p className="text-sm text-ink/80 font-sans mt-0.5">Guided peer interaction, gross-motor exploration, and creative play celebrating daily inchstone wins.</p>
+                  <h4 className="text-lg font-bold font-heading text-ink">Indoor Play-Based Skill Practice</h4>
+                  <p className="text-sm text-ink/80 font-sans mt-0.5">Guided indoor peer interaction, gross-motor and sensory exploration, and creative play celebrating daily inchstone wins.</p>
                 </div>
               </div>
 
