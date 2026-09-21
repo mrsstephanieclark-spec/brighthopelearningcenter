@@ -122,7 +122,7 @@ export const ProgramsPage: React.FC = () => {
               </h2>
 
               <p className="text-base sm:text-lg text-ink/85 leading-relaxed font-sans">
-                Bright Hope Learning Center is a specialized early intervention and educational program — not a custodial daycare. Built around licensed therapists, individualized service plans, and evidence-based early-intervention practices, our program provides structured therapeutic learning environments tailored specifically for children ages 1–5 with special needs. Every classroom experience, activity, and therapy session is intentionally designed by credentialed professionals to foster independence, communication, and developmental growth — completely tuition-free for every family.
+                Bright Hope Learning Center is a specialized early intervention and educational program — not a custodial daycare. Built around licensed special education teachers and therapists, individualized service plans, and evidence-based early-intervention practices, our program provides structured therapeutic learning environments tailored specifically for children ages 1–5 with special needs. Every classroom experience, activity, and therapy session is intentionally designed by credentialed professionals to foster independence, communication, and developmental growth — completely tuition-free for every family.
               </p>
 
               {/* 4 Feature Badges */}
