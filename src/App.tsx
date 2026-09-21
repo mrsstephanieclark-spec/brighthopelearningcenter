@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { PathSection } from './components/PathSection';
+import { CloserLookSection } from './components/CloserLookSection';
 import { ValuesSection } from './components/ValuesSection';
 import { InchstonesSection } from './components/InchstonesSection';
 import { MissionBand } from './components/MissionBand';
@@ -17,6 +18,7 @@ function HomePage() {
       <main className="flex-grow">
         <Hero />
         <PathSection />
+        <CloserLookSection />
         <ValuesSection />
         <InchstonesSection />
         <MissionBand />
