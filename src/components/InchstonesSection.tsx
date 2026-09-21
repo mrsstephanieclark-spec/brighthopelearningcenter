@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pencil, Footprints, Ear, HeartHandshake, MessageCircle } from 'lucide-react';
+import { Palette, Footprints, Ear, Sparkles, MessageCircle } from 'lucide-react';
 
 interface InchstoneCard {
   id: string;
@@ -13,10 +13,10 @@ interface InchstoneCard {
 export const InchstonesSection: React.FC = () => {
   const inchstones: InchstoneCard[] = [
     {
-      id: 'letter',
-      title: 'First traced letter',
-      description: 'A shaky line becomes a real "A" — weeks of fine-motor work, right there on the page.',
-      icon: <Pencil className="w-6 h-6" />,
+      id: 'paintbrush',
+      title: 'Held an adapted paintbrush',
+      description: 'Held an adapted paintbrush in her hand for ten seconds — a small grip, a big step.',
+      icon: <Palette className="w-6 h-6" />,
       badgeBg: 'bg-blue/15',
       badgeColor: 'text-blue'
     },
@@ -37,10 +37,10 @@ export const InchstonesSection: React.FC = () => {
       badgeColor: 'text-green'
     },
     {
-      id: 'toy',
-      title: 'Shared a toy, unprompted',
-      description: 'No one asked. They just did it. That\'s the whole ballgame some days.',
-      icon: <HeartHandshake className="w-6 h-6" />,
+      id: 'play',
+      title: 'First pretend play',
+      description: 'Demonstrated pretend play for the first time — after many, many modeled opportunities.',
+      icon: <Sparkles className="w-6 h-6" />,
       badgeBg: 'bg-pink/15',
       badgeColor: 'text-pink'
     },
