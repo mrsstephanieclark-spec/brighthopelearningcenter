@@ -23,19 +23,15 @@ export const Footer: React.FC = () => {
         {/* Three Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16 text-left mb-12">
           
-          {/* Column 1: Logo Icon + Jeremiah Scripture */}
+          {/* Column 1: Logo + Jeremiah Scripture */}
           <div className="space-y-4">
-            <a href="#" className="inline-block outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-lg">
+            <a href="/" className="inline-block outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-lg" aria-label="Bright Hope Learning Center Home">
               <img 
-                src="/assets/logo-icon.png" 
-                alt="Bright Hope Mark" 
-                className="h-14 w-auto object-contain" 
+                src="/assets/logo-horizontal.png" 
+                alt="Bright Hope Learning Center" 
+                className="h-14 sm:h-16 w-auto object-contain" 
               />
             </a>
-            
-            <p className="text-sm font-semibold font-heading text-ink">
-              Bright Hope Learning Center
-            </p>
 
             <p className="text-sm italic font-sans text-ink/80 border-l-2 border-gold pl-3 py-1">
               "For I know the plans I have for you… plans to give you hope and a future." — Jeremiah 29:11
