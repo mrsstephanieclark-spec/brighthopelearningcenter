@@ -68,10 +68,10 @@ export const PathSection: React.FC = () => {
   ];
 
   return (
-    <section id="paths" className="py-16 md:py-24 bg-green/10 dark:bg-green/15 border-y border-green/20 transition-colors duration-200 relative overflow-hidden">
+    <section id="paths" className="py-16 md:py-24 bg-paper-raised border-y border-ink/10 transition-colors duration-200 relative overflow-hidden">
       
       {/* Decorative background path motif line at the top */}
-      <div className="absolute top-3 left-0 right-0 hidden md:block pointer-events-none opacity-25">
+      <div className="absolute top-3 left-0 right-0 hidden md:block pointer-events-none opacity-20">
         <svg className="w-full h-8 text-green" viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M 0,20 C 300,35 600,5 900,25 C 1050,35 1150,15 1200,20" stroke="currentColor" strokeWidth="2.5" strokeDasharray="6 6" />
         </svg>
@@ -81,7 +81,7 @@ export const PathSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
-          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-green bg-green/15 px-3.5 py-1.5 rounded-full border border-green/30 mb-5 shadow-xs">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green px-3.5 py-1.5 rounded-full mb-5 shadow-xs">
             Choose your next step
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -94,7 +94,7 @@ export const PathSection: React.FC = () => {
           {pathCards.map((card) => (
             <div
               key={card.id}
-              className="rounded-2xl border border-ink/10 bg-paper-raised p-6 shadow-sm hover:shadow-md hover:border-green/30 transition-all duration-200 flex flex-col justify-between text-left h-full"
+              className="rounded-2xl border border-ink/10 bg-paper p-6 shadow-sm hover:shadow-md hover:border-green transition-all duration-200 flex flex-col justify-between text-left h-full"
             >
               <div>
                 {/* Circle Icon */}

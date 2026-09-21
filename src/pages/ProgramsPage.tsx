@@ -60,7 +60,7 @@ export const ProgramsPage: React.FC = () => {
             <div className="max-w-3xl space-y-6">
               
               {/* Eyebrow */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue/10 border border-blue/20 text-blue font-bold text-sm tracking-wide">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue text-white font-bold text-sm tracking-wide shadow-xs">
                 <Sun className="w-4 h-4 text-gold" />
                 <span>Bright Hope Learning Center · Programs & Services</span>
               </div>
@@ -101,7 +101,7 @@ export const ProgramsPage: React.FC = () => {
 
 
         {/* 2. "WHAT WE ACTUALLY ARE" SECTION */}
-        <section className="py-16 md:py-24 bg-green/10 dark:bg-green/15 border-b border-green/20 transition-colors duration-200 relative overflow-hidden">
+        <section className="py-16 md:py-24 bg-paper-raised border-b border-ink/10 transition-colors duration-200 relative overflow-hidden">
           
           {/* Decorative background path motif line */}
           <div className="absolute top-4 left-0 right-0 hidden md:block pointer-events-none opacity-20">
@@ -111,9 +111,9 @@ export const ProgramsPage: React.FC = () => {
           </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
-            <div className="max-w-4xl mx-auto space-y-6 bg-paper-raised p-8 sm:p-12 rounded-3xl border border-ink/10 shadow-lg">
+            <div className="max-w-4xl mx-auto space-y-6 bg-paper p-8 sm:p-12 rounded-3xl border border-ink/10 shadow-md">
               
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-green bg-green/15 px-3.5 py-1.5 rounded-full border border-green/30">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green px-3.5 py-1.5 rounded-full shadow-xs">
                 Our Purpose & Approach
               </span>
 
@@ -127,22 +127,22 @@ export const ProgramsPage: React.FC = () => {
 
               {/* 4 Feature Badges */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper border border-ink/10">
+                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
                   <Award className="w-5 h-5 text-blue shrink-0" />
                   <span className="text-sm font-bold font-heading text-ink">Licensed Therapists & Educators</span>
                 </div>
 
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper border border-ink/10">
+                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
                   <Compass className="w-5 h-5 text-green shrink-0" />
                   <span className="text-sm font-bold font-heading text-ink">Individualized Service Plans</span>
                 </div>
 
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper border border-ink/10">
+                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
                   <Activity className="w-5 h-5 text-gold shrink-0" />
                   <span className="text-sm font-bold font-heading text-ink">Evidence-Based Practices</span>
                 </div>
 
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper border border-ink/10">
+                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
                   <ShieldCheck className="w-5 h-5 text-pink shrink-0" />
                   <span className="text-sm font-bold font-heading text-ink">100% Tuition-Free for Families</span>
                 </div>
@@ -158,7 +158,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-blue bg-blue/10 px-3.5 py-1.5 rounded-full border border-blue/20">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-blue px-3.5 py-1.5 rounded-full shadow-xs">
                 Understanding Early Intervention
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -172,8 +172,8 @@ export const ProgramsPage: React.FC = () => {
             {/* 3 Pillars Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-blue/15 text-blue flex items-center justify-center font-bold mb-4">
+              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-blue transition-all duration-200">
+                <div className="w-12 h-12 rounded-2xl bg-blue text-white flex items-center justify-center font-bold mb-4 shadow-sm">
                   <Sparkles className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold font-heading text-ink mb-3">
@@ -184,9 +184,9 @@ export const ProgramsPage: React.FC = () => {
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-gold/25 text-ink flex items-center justify-center font-bold mb-4">
-                  <Heart className="w-6 h-6 text-gold" />
+              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-gold transition-all duration-200">
+                <div className="w-12 h-12 rounded-2xl bg-gold text-ink flex items-center justify-center font-bold mb-4 shadow-sm">
+                  <Heart className="w-6 h-6 fill-ink/20 text-ink" />
                 </div>
                 <h3 className="text-xl font-bold font-heading text-ink mb-3">
                   Building Family Confidence
@@ -196,8 +196,8 @@ export const ProgramsPage: React.FC = () => {
                 </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-green/15 text-green flex items-center justify-center font-bold mb-4">
+              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-green transition-all duration-200">
+                <div className="w-12 h-12 rounded-2xl bg-green text-white flex items-center justify-center font-bold mb-4 shadow-sm">
                   <Award className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold font-heading text-ink mb-3">
@@ -215,7 +215,7 @@ export const ProgramsPage: React.FC = () => {
 
 
         {/* 4. THERAPIES OFFERED */}
-        <section id="therapies" className="py-16 md:py-24 bg-pink/10 dark:bg-pink/15 border-b border-pink/20 transition-colors duration-200 relative overflow-hidden">
+        <section id="therapies" className="py-16 md:py-24 bg-paper-raised border-b border-ink/10 transition-colors duration-200 relative overflow-hidden">
           
           {/* Decorative path line */}
           <div className="absolute top-4 left-0 right-0 hidden md:block pointer-events-none opacity-20">
@@ -227,7 +227,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-pink bg-pink/15 px-3.5 py-1.5 rounded-full border border-pink/30">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-pink px-3.5 py-1.5 rounded-full shadow-xs">
                 Comprehensive Care
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">

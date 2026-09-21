@@ -55,7 +55,7 @@ export const InchstonesSection: React.FC = () => {
   ];
 
   return (
-    <section id="inchstones" className="py-16 md:py-24 bg-pink/10 dark:bg-pink/15 border-y border-pink/20 transition-colors duration-200 relative overflow-hidden">
+    <section id="inchstones" className="py-16 md:py-24 bg-paper border-y border-ink/10 transition-colors duration-200 relative overflow-hidden">
       
       {/* Decorative background path motif line */}
       <div className="absolute top-4 left-0 right-0 hidden md:block pointer-events-none opacity-20">
@@ -68,7 +68,7 @@ export const InchstonesSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16 flex flex-col items-center">
-          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-gold bg-gold/20 px-3.5 py-1.5 rounded-full border border-gold/40 text-ink mb-6 shadow-xs">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-ink bg-gold px-3.5 py-1.5 rounded-full mb-6 shadow-xs">
             Our word for it
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink mb-5">
@@ -84,7 +84,7 @@ export const InchstonesSection: React.FC = () => {
           {inchstones.map((card) => (
             <div
               key={card.id}
-              className="p-6 rounded-2xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-pink/30 transition-all duration-200 flex flex-col justify-between text-left h-full"
+              className="p-6 rounded-2xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-gold transition-all duration-200 flex flex-col justify-between text-left h-full"
             >
               <div>
                 <div className={`w-12 h-12 rounded-xl ${card.badgeBg} ${card.badgeColor} flex items-center justify-center mb-4`}>
