@@ -6,6 +6,7 @@ import { CloserLookSection } from './components/CloserLookSection';
 import { ValuesSection } from './components/ValuesSection';
 import { InchstonesSection } from './components/InchstonesSection';
 import { MissionBand } from './components/MissionBand';
+import { CampaignsSection } from './components/CampaignsSection';
 import { GiveBand } from './components/GiveBand';
 import { Footer } from './components/Footer';
 import { ProgramsPage } from './pages/ProgramsPage';
@@ -22,6 +23,7 @@ function HomePage() {
         <ValuesSection />
         <InchstonesSection />
         <MissionBand />
+        <CampaignsSection />
         <GiveBand />
       </main>
       <Footer />
