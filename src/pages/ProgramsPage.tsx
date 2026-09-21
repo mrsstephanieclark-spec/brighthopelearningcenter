@@ -22,12 +22,12 @@ export const ProgramsPage: React.FC = () => {
     {
       id: 'faq-1',
       question: 'What ages do you serve?',
-      answer: 'Bright Hope Learning Center serves children ages 1 through 6 with special needs or developmental delays, providing early intervention, therapy, and education prior to elementary school enrollment.'
+      answer: 'Bright Hope serves children ages 1–5 at the time of enrollment. A child who turns 6 during the school year may continue attending through the end of that school year.'
     },
     {
       id: 'faq-2',
       question: 'What is early intervention?',
-      answer: 'Early intervention refers to specialized therapeutic and educational services provided during a child\'s earliest developmental years (ages 1–6). Receiving support early takes advantage of critical brain adaptability windows to build language, motor, and social skills.'
+      answer: 'Early intervention refers to specialized therapeutic and educational services provided during a child\'s earliest developmental years (ages 1–5). Receiving support early takes advantage of critical brain adaptability windows to build language, motor, and social skills.'
     },
     {
       id: 'faq-3',
@@ -72,7 +72,7 @@ export const ProgramsPage: React.FC = () => {
 
               {/* Subhead (1-2 sentences) */}
               <p className="text-lg sm:text-xl text-ink/80 leading-relaxed font-sans">
-                Bright Hope serves children ages 1–6 with special needs, providing Christ-centered early intervention, education, and therapy — <strong className="text-ink font-extrabold">completely tuition-free</strong>.
+                Bright Hope serves children ages 1–5 with special needs, providing Christ-centered early intervention, education, and therapy — <strong className="text-ink font-extrabold">completely tuition-free</strong>.
               </p>
 
               {/* CTA Buttons */}
@@ -122,7 +122,7 @@ export const ProgramsPage: React.FC = () => {
               </h2>
 
               <p className="text-base sm:text-lg text-ink/85 leading-relaxed font-sans">
-                Bright Hope Learning Center is a specialized early intervention and educational program — not a custodial daycare. Built around licensed therapists, individualized service plans, and evidence-based early-intervention practices, our program provides structured therapeutic learning environments tailored specifically for children ages 1–6 with special needs. Every classroom experience, activity, and therapy session is intentionally designed by credentialed professionals to foster independence, communication, and developmental growth — completely tuition-free for every family.
+                Bright Hope Learning Center is a specialized early intervention and educational program — not a custodial daycare. Built around licensed therapists, individualized service plans, and evidence-based early-intervention practices, our program provides structured therapeutic learning environments tailored specifically for children ages 1–5 with special needs. Every classroom experience, activity, and therapy session is intentionally designed by credentialed professionals to foster independence, communication, and developmental growth — completely tuition-free for every family.
               </p>
 
               {/* 4 Feature Badges */}
@@ -165,7 +165,7 @@ export const ProgramsPage: React.FC = () => {
                 What early intervention means — and why acting early matters.
               </h2>
               <p className="text-base sm:text-lg text-ink/80 font-sans leading-relaxed">
-                The early childhood years — between ages 1 and 6 — represent the most significant window of brain development in a child's life. "Early intervention" simply means providing specialized support, therapy, and developmental tools right when a delay or diagnosis is identified, rather than taking a "wait-and-see" approach.
+                The early childhood years — between ages 1 and 5 — represent the most significant window of brain development in a child's life. "Early intervention" simply means providing specialized support, therapy, and developmental tools right when a delay or diagnosis is identified, rather than taking a "wait-and-see" approach.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export const ProgramsPage: React.FC = () => {
                   Unlocking Early Potential
                 </h3>
                 <p className="text-sm text-ink/80 leading-relaxed font-sans">
-                  During ages 1–6, young brains are extraordinarily adaptable. Introducing targeted speech, physical, and occupational therapy early creates neural pathways that make learning and skill-building faster and more natural.
+                  During ages 1–5, young brains are extraordinarily adaptable. Introducing targeted speech, physical, and occupational therapy early creates neural pathways that make learning and skill-building faster and more natural.
                 </p>
               </div>
 

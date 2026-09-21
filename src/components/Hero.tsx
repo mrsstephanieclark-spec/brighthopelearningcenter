@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
 
             {/* Subhead */}
             <p className="text-lg sm:text-xl text-ink/80 leading-relaxed font-sans max-w-2xl">
-              Bright Hope Learning Center provides Christ-centered early intervention, education, and therapy — <strong className="text-ink font-extrabold">completely tuition-free</strong> — for children ages 1–6 with special needs.
+              Bright Hope Learning Center provides Christ-centered early intervention, education, and therapy — <strong className="text-ink font-extrabold">completely tuition-free</strong> — for children ages 1–5 with special needs.
             </p>
 
             {/* Buttons */}

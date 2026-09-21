@@ -32,7 +32,7 @@ export const CloserLookSection: React.FC = () => {
       id: 'services',
       title: 'Our Services',
       subtitle: 'What we offer',
-      blurb: 'Licensed speech, occupational, and physical therapy alongside specialized early education — completely tuition-free for ages 1–6.',
+      blurb: 'Licensed speech, occupational, and physical therapy alongside specialized early education — completely tuition-free for ages 1–5.',
       imageSrc: '/assets/images/our-services-square.jpg',
       imageAlt: 'Pediatric therapist engaging a child with physical and developmental exercises',
       linkHref: '/programs',
