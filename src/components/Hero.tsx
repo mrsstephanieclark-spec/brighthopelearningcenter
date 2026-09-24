@@ -3,14 +3,38 @@ import { Compass, Heart, Sun } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[680px] flex items-center justify-center overflow-hidden py-16 md:py-24 lg:py-28 bg-gradient-to-br from-[#0B4EA2] via-[#09428B] to-[#062E61] text-white transition-colors duration-200">
+    <section className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex items-center justify-center overflow-hidden py-16 md:py-24 lg:py-28 bg-[#0B4EA2] text-white transition-colors duration-200">
       
-      {/* Decorative background subtle glows */}
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-gold/15 rounded-full blur-3xl pointer-events-none z-0" />
-      <div className="absolute top-1/2 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none z-0" />
+      {/* 1. Full-Bleed Background Video */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls={false}
+          poster="/assets/images/hero-therapy-session.jpg"
+          className="w-full h-full object-cover object-center"
+        >
+          <source src="/assets/videos/hero-background.mp4" type="video/mp4" />
+          <img 
+            src="/assets/images/hero-therapy-session.jpg" 
+            alt="Bright Hope early intervention specialist engaging a young boy during a floor therapy session" 
+            className="w-full h-full object-cover object-center"
+          />
+        </video>
+      </div>
 
-      {/* Layered Hero Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-left">
+      {/* 2. Brand Blue Overlay Layer (rgba(11, 78, 162, 0.65) for WCAG AA text readability) */}
+      <div className="absolute inset-0 bg-[#0B4EA2]/65 dark:bg-[#0B4EA2]/75 backdrop-blur-[1px] z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#062E61]/80 via-transparent to-[#0B4EA2]/30 z-10 pointer-events-none" />
+
+      {/* Decorative background subtle glows */}
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-gold/20 rounded-full blur-3xl pointer-events-none z-10" />
+      <div className="absolute top-1/2 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none z-10" />
+
+      {/* 3. Layered Hero Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full text-left">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Left Column: Headline, Subhead, Scripture & CTAs */}
@@ -23,12 +47,12 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white leading-tight tracking-tight drop-shadow-sm">
               Every child was made for a <span className="text-gold underline decoration-gold decoration-4 underline-offset-4">bright future.</span>
             </h1>
 
             {/* Subhead */}
-            <p className="text-lg sm:text-xl text-[#F5F5F5] leading-relaxed font-sans max-w-2xl font-medium">
+            <p className="text-lg sm:text-xl text-[#F5F5F5] leading-relaxed font-sans max-w-2xl font-medium drop-shadow-xs">
               Bright Hope Learning Center provides Christ-centered early intervention, education, and therapy — <strong className="text-white font-extrabold underline decoration-gold/60 decoration-2">completely tuition-free</strong> — for children ages 1–5 with special needs.
             </p>
 
