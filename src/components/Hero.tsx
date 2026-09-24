@@ -25,8 +25,8 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
         {prefersReducedMotion ? (
           <img 
-            src="/assets/images/hero-video-poster.jpg" 
-            alt="Bright Hope Learning Center classroom" 
+            src="/assets/images/hero-therapy-session.jpg" 
+            alt="Bright Hope early intervention specialist engaging a young boy during a floor therapy session" 
             className="w-full h-full object-cover object-center"
           />
         ) : (
@@ -36,13 +36,13 @@ export const Hero: React.FC = () => {
             muted
             playsInline
             controls={false}
-            poster="/assets/images/hero-video-poster.jpg"
+            poster="/assets/images/hero-therapy-session.jpg"
             className="w-full h-full object-cover object-center transition-opacity duration-700"
           >
             <source src="/assets/videos/hero-background.mp4" type="video/mp4" />
             <img 
-              src="/assets/images/hero-video-poster.jpg" 
-              alt="Bright Hope Learning Center classroom" 
+              src="/assets/images/hero-therapy-session.jpg" 
+              alt="Bright Hope early intervention specialist engaging a young boy during a floor therapy session" 
               className="w-full h-full object-cover object-center"
             />
           </video>
@@ -115,13 +115,13 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-3xl p-4 bg-paper-raised/90 backdrop-blur-md border border-ink/10 shadow-2xl space-y-3">
               <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-inner border border-ink/10">
                 <img 
-                  src="/assets/images/hero-video-poster.jpg" 
-                  alt="Bright Hope student learning in classroom" 
+                  src="/assets/images/hero-therapy-session.jpg" 
+                  alt="Bright Hope early intervention specialist engaging a young boy during a floor therapy session" 
                   className="w-full h-full object-cover object-center" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent flex items-end p-4">
                   <span className="text-xs font-bold text-white uppercase tracking-wider bg-blue/90 px-3 py-1 rounded-full backdrop-blur-xs">
-                    ✦ Classroom In Action
+                    ✦ Early Intervention
                   </span>
                 </div>
               </div>
