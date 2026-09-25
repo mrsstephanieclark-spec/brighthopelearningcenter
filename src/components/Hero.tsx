@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Compass, Heart, Sun } from 'lucide-react';
 
 export const Hero: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5;
+    }
+  }, []);
+
   return (
     <section className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex items-center justify-center overflow-hidden py-16 md:py-24 lg:py-28 bg-black text-white transition-colors duration-200">
       
-      {/* 1. Full-Bleed Background Video / Poster */}
+      {/* 1. Full-Bleed Background Video / Poster (Slow ambient 0.5x playback speed) */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <video
+          ref={videoRef}
           autoPlay
           loop
           muted
