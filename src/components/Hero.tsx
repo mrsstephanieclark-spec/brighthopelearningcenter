@@ -3,9 +3,9 @@ import { Compass, Heart, Sun } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex items-center justify-center overflow-hidden py-16 md:py-24 lg:py-28 bg-[#0B4EA2] text-white transition-colors duration-200">
+    <section className="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex items-center justify-center overflow-hidden py-16 md:py-24 lg:py-28 bg-black text-white transition-colors duration-200">
       
-      {/* 1. Full-Bleed Background Video */}
+      {/* 1. Full-Bleed Background Video / Poster */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <video
           autoPlay
@@ -26,13 +26,13 @@ export const Hero: React.FC = () => {
         </video>
       </div>
 
-      {/* 2. Brand Blue Overlay Layer (rgba(11, 78, 162, 0.65) for WCAG AA text readability) */}
-      <div className="absolute inset-0 bg-[#0B4EA2]/65 dark:bg-[#0B4EA2]/75 backdrop-blur-[1px] z-10 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#062E61]/80 via-transparent to-[#0B4EA2]/30 z-10 pointer-events-none" />
+      {/* 2. Dark Neutral Scrim Overlay (Darker black on left for WCAG AA text contrast, lighter on right for vibrant photo visibility) */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/20 z-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 z-10 pointer-events-none" />
 
-      {/* Decorative background subtle glows */}
-      <div className="absolute -top-24 -left-24 w-96 h-96 bg-gold/20 rounded-full blur-3xl pointer-events-none z-10" />
-      <div className="absolute top-1/2 -right-24 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none z-10" />
+      {/* Decorative subtle ambient glows */}
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-gold/15 rounded-full blur-3xl pointer-events-none z-10" />
+      <div className="absolute top-1/2 -right-24 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none z-10" />
 
       {/* 3. Layered Hero Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full text-left">
