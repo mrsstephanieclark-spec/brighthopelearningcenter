@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
                 </div>
               </div>
 
-              <p className="text-xs font-bold text-ink font-sans text-left">
+              <p className="text-xs font-bold text-[#0B4EA2] font-sans text-left">
                 Christ-centered early intervention & specialized education in Shelbyville, KY.
               </p>
             </div>
