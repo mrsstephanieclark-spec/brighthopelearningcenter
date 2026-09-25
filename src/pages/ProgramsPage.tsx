@@ -336,47 +336,51 @@ export const ProgramsPage: React.FC = () => {
             {/* Day Flow Timeline Grid */}
             <div className="max-w-4xl mx-auto space-y-4">
               
-              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#0B4EA2] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              {/* Morning - Blue Left Border & Light Blue Tint */}
+              <div className="p-6 rounded-2xl bg-[#0B4EA2]/5 border-l-4 border-[#0B4EA2] border-r border-y border-[#0B4EA2]/20 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="px-4 py-2 rounded-xl bg-[#0B4EA2] text-white font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
                   <Clock className="w-4 h-4 text-[#FFD200]" />
                   <span>Morning</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold font-heading text-ink">Welcome & Circle Time</h4>
-                  <p className="text-sm text-ink/80 font-sans mt-0.5">Warm greetings, sensory check-in, songs, and routine-building fostering social connection and predictability.</p>
+                  <h4 className="text-lg font-bold font-heading text-[#051C3B]">Welcome & Circle Time</h4>
+                  <p className="text-sm text-[#051C3B]/85 font-sans mt-0.5">Warm greetings, sensory check-in, songs, and routine-building fostering social connection and predictability.</p>
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#FFD200] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              {/* Mid-Morning - Gold Left Border & Light Warm Yellow Tint */}
+              <div className="p-6 rounded-2xl bg-[#FFD200]/15 border-l-4 border-[#FFD200] border-r border-y border-[#FFD200]/30 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="px-4 py-2 rounded-xl bg-[#FFD200] text-[#051C3B] font-extrabold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
                   <Clock className="w-4 h-4 text-[#051C3B]" />
                   <span>Mid-Morning</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold font-heading text-ink">Small-Group Therapeutic Sessions</h4>
-                  <p className="text-sm text-ink/80 font-sans mt-0.5">Targeted small-group sessions with licensed OT, PT, and Speech-Language specialists tailored to each child's goal plan. Individual 1-on-1 sessions occur selectively (particularly for physical therapy) based on specific developmental needs.</p>
+                  <h4 className="text-lg font-bold font-heading text-[#051C3B]">Small-Group Therapeutic Sessions</h4>
+                  <p className="text-sm text-[#051C3B]/85 font-sans mt-0.5">Targeted small-group sessions with licensed OT, PT, and Speech-Language specialists tailored to each child's goal plan. Individual 1-on-1 sessions occur selectively (particularly for physical therapy) based on specific developmental needs.</p>
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#7FBF3F] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              {/* Mid-Day - Light Green Left Border & Light Green Tint */}
+              <div className="p-6 rounded-2xl bg-[#7FBF3F]/12 border-l-4 border-[#7FBF3F] border-r border-y border-[#7FBF3F]/25 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="px-4 py-2 rounded-xl bg-[#7FBF3F] text-[#051C3B] font-extrabold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
                   <Clock className="w-4 h-4 text-[#051C3B]" />
                   <span>Mid-Day</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold font-heading text-ink">Small-Group Learning & Discovery</h4>
-                  <p className="text-sm text-ink/80 font-sans mt-0.5">Hands-on cognitive, pre-writing, and early literacy activities guided by specialized early intervention educators.</p>
+                  <h4 className="text-lg font-bold font-heading text-[#051C3B]">Small-Group Learning & Discovery</h4>
+                  <p className="text-sm text-[#051C3B]/85 font-sans mt-0.5">Hands-on cognitive, pre-writing, and early literacy activities guided by specialized early intervention educators.</p>
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#2E7D32] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              {/* Afternoon - Dark Green Left Border & Light Deep-Green Tint */}
+              <div className="p-6 rounded-2xl bg-[#2E7D32]/10 border-l-4 border-[#2E7D32] border-r border-y border-[#2E7D32]/20 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="px-4 py-2 rounded-xl bg-[#2E7D32] text-white font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
                   <Clock className="w-4 h-4 text-[#FFD200]" />
                   <span>Afternoon</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold font-heading text-ink">Indoor Play-Based Skill Practice</h4>
-                  <p className="text-sm text-ink/80 font-sans mt-0.5">Guided indoor peer interaction, gross-motor and sensory exploration, and creative play celebrating daily inchstone wins.</p>
+                  <h4 className="text-lg font-bold font-heading text-[#051C3B]">Indoor Play-Based Skill Practice</h4>
+                  <p className="text-sm text-[#051C3B]/85 font-sans mt-0.5">Guided indoor peer interaction, gross-motor and sensory exploration, and creative play celebrating daily inchstone wins.</p>
                 </div>
               </div>
 
