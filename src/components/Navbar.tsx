@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
               href="https://givebutter.com/bhlc"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green hover:bg-green/90 text-white font-bold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold outline-none"
+              className="inline-flex items-center gap-2 bg-green-secondary hover:bg-green-secondary/90 text-white font-bold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200 focus-visible:ring-2 focus-visible:ring-gold outline-none"
             >
               <Heart className="w-4 h-4 fill-white/20 text-white" />
               <span>Donate</span>
@@ -62,7 +62,7 @@ export const Navbar: React.FC = () => {
               href="https://givebutter.com/bhlc"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 bg-green text-white font-bold px-3.5 py-1.5 rounded-full text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none"
+              className="inline-flex items-center gap-1.5 bg-green-secondary text-white font-bold px-3.5 py-1.5 rounded-full text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none"
             >
               <span>Donate</span>
             </a>

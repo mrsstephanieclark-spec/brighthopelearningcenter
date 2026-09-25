@@ -36,7 +36,7 @@ export const GiveBand: React.FC = () => {
                 href="https://givebutter.com/bhlc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-green hover:bg-green/90 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-gold outline-none"
+                className="inline-flex items-center justify-center gap-2 bg-green-secondary hover:bg-green-secondary/90 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-gold outline-none"
               >
                 <Heart className="w-5 h-5 fill-white/20 text-white" />
                 <span>Join Hopebuilders</span>

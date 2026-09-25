@@ -37,14 +37,14 @@ export const PathSection: React.FC = () => {
       id: 'donate',
       title: "I'd like to Donate",
       initials: '$',
-      circleBg: 'bg-green',
+      circleBg: 'bg-green-secondary',
       circleText: 'text-white',
       blurb: "Every gift goes straight to keeping this tuition-free for the families who need it most, through our Givebutter fund.",
       linkHref: 'https://givebutter.com/bhlc',
       linkLabel: 'Give on Givebutter',
       icon: <Heart className="w-4 h-4" />,
       external: true,
-      btnClass: 'bg-green text-white hover:bg-green/90'
+      btnClass: 'bg-green-secondary text-white hover:bg-green-secondary/90'
     },
     {
       id: 'volunteer',
@@ -86,7 +86,7 @@ export const PathSection: React.FC = () => {
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 flex flex-col items-center">
-          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green px-3.5 py-1.5 rounded-full mb-5 shadow-xs">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green-secondary px-3.5 py-1.5 rounded-full mb-5 shadow-xs">
             Choose your next step
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">

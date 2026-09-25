@@ -36,8 +36,8 @@ export const CloserLookSection: React.FC = () => {
       imageSrc: '/assets/images/our-services-square.jpg',
       imageAlt: 'Child completing hands-on picture card sorting activities with colorful rhyming houses during speech session',
       linkHref: '/programs',
-      badgeColor: 'text-white bg-green',
-      badgeText: 'text-green',
+      badgeColor: 'text-white bg-green-secondary',
+      badgeText: 'text-green-secondary',
       icon: <Compass className="w-4 h-4" />
     },
     {

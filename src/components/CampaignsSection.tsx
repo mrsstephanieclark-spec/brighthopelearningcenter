@@ -24,9 +24,9 @@ export const CampaignsSection: React.FC = () => {
       buttonLabel: 'Support Garden Party',
       linkHref: 'https://givebutter.com/bhlc',
       icon: <Flower2 className="w-6 h-6" />,
-      tagBg: 'bg-green text-white',
-      tagColor: 'text-green',
-      cardHoverBorder: 'hover:border-green'
+      tagBg: 'bg-green-secondary text-white',
+      tagColor: 'text-green-secondary',
+      cardHoverBorder: 'hover:border-green-secondary'
     },
     {
       id: 'giving-tuesday',
@@ -114,7 +114,7 @@ export const CampaignsSection: React.FC = () => {
                   href={campaign.linkHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-green hover:bg-green/90 text-white font-bold px-5 py-3 rounded-xl transition-all duration-200 text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center"
+                  className="inline-flex items-center justify-center gap-2 bg-green-secondary hover:bg-green-secondary/90 text-white font-bold px-5 py-3 rounded-xl transition-all duration-200 text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center"
                 >
                   <span>{campaign.buttonLabel}</span>
                   <ExternalLink className="w-4 h-4 opacity-80" />

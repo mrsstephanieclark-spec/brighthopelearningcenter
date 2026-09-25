@@ -40,9 +40,9 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Contact Information */}
           <div className="space-y-4">
-            <h4 className="text-base font-bold font-heading text-ink uppercase tracking-wider">
+            <h3 className="text-base font-bold font-heading text-ink uppercase tracking-wider">
               Contact Us
-            </h4>
+            </h3>
 
             <ul className="space-y-3 text-sm font-sans text-ink/85">
               <li>
@@ -81,11 +81,11 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Social & Community */}
           <div className="space-y-4">
-            <h4 className="text-base font-bold font-heading text-ink uppercase tracking-wider">
+            <h3 className="text-base font-bold font-heading text-ink uppercase tracking-wider">
               Connect With Us
-            </h4>
+            </h3>
 
-            <p className="text-sm text-ink/80 font-sans">
+            <p className="text-sm text-ink/85 font-sans">
               Follow along with Bright Hope milestones, classroom updates, and community events.
             </p>
 
@@ -115,20 +115,20 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Dashed Top Divider */}
-        <div className="border-t border-dashed border-ink/20 pt-8 mt-8 space-y-4 text-xs font-sans text-ink/70 text-left">
+        <div className="border-t border-dashed border-ink/20 pt-8 mt-8 space-y-4 text-xs font-sans text-ink/80 text-left">
           
           {/* NOTE: Standard non-discrimination statement wording. Kerry/legal counsel should explicitly review and sign off on exact wording before official production launch. */}
           <div className="p-4 rounded-xl bg-paper border border-ink/10 space-y-1.5">
-            <h5 className="font-bold text-ink text-xs uppercase tracking-wider">
+            <h4 className="font-bold text-ink text-xs uppercase tracking-wider">
               IRS Non-Discrimination Policy
-            </h5>
+            </h4>
 
-            <p className="leading-relaxed text-ink/75">
+            <p className="leading-relaxed text-ink/85">
               Bright Hope Learning Center admits students of any race, color, national origin, and ethnic origin to all the rights, privileges, programs, and activities generally made available to students. It does not discriminate on the basis of race, color, national origin, sex, disability, or ethnic origin in the administration of its educational policies, admissions policies, and other school-administered programs.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 text-ink/60">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 text-ink/80">
             <p>© {new Date().getFullYear()} Bright Hope Learning Center. All rights reserved.</p>
             <p>Shelbyville, Kentucky · Christ-Centered Special Education</p>
           </div>

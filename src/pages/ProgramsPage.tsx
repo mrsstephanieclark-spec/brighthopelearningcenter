@@ -113,7 +113,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             <div className="max-w-4xl mx-auto space-y-6 bg-paper p-8 sm:p-12 rounded-3xl border border-ink/10 shadow-md">
               
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green px-3.5 py-1.5 rounded-full shadow-xs">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green-secondary px-3.5 py-1.5 rounded-full shadow-xs">
                 Our Purpose & Approach
               </span>
 
@@ -197,7 +197,7 @@ export const ProgramsPage: React.FC = () => {
               </div>
 
               <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-green transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-green text-white flex items-center justify-center font-bold mb-4 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-green-secondary text-white flex items-center justify-center font-bold mb-4 shadow-sm">
                   <Award className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold font-heading text-ink mb-3">
@@ -227,7 +227,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green px-3.5 py-1.5 rounded-full shadow-xs">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green-secondary px-3.5 py-1.5 rounded-full shadow-xs">
                 Comprehensive Care
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">

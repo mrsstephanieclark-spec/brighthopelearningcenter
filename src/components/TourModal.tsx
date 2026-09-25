@@ -16,6 +16,17 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
     message: ''
   });
 
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isOpen) {
+        setSubmitted(false);
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -109,7 +120,7 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
 
             {/* Parent/Guardian Name (Required) */}
             <div>
-              <label htmlFor="parentName" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
+              <label htmlFor="parentName" className="block text-xs font-bold uppercase tracking-wider text-ink mb-1">
                 Parent/Guardian Name <span className="text-blue">*</span>
               </label>
               <input
@@ -117,16 +128,17 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
                 id="parentName"
                 name="parentName"
                 required
+                aria-required="true"
                 value={formData.parentName}
                 onChange={handleChange}
                 placeholder="Jane Doe"
-                className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-gold"
+                className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/50 focus:outline-none focus:ring-2 focus:ring-gold"
               />
             </div>
 
             {/* Email (Required) */}
             <div>
-              <label htmlFor="email" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
+              <label htmlFor="email" className="block text-xs font-bold uppercase tracking-wider text-ink mb-1">
                 Email Address <span className="text-blue">*</span>
               </label>
               <input
@@ -134,18 +146,19 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
                 id="email"
                 name="email"
                 required
+                aria-required="true"
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="jane@example.com"
-                className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-gold"
+                className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/50 focus:outline-none focus:ring-2 focus:ring-gold"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Phone (Optional) */}
               <div>
-                <label htmlFor="phone" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
-                  Phone <span className="text-ink/40 text-[10px] font-normal">(Optional)</span>
+                <label htmlFor="phone" className="block text-xs font-bold uppercase tracking-wider text-ink mb-1">
+                  Phone <span className="text-ink/60 text-[10px] font-normal">(Optional)</span>
                 </label>
                 <input
                   type="tel"
@@ -154,13 +167,13 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="(502) 555-0199"
-                  className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-gold"
+                  className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/50 focus:outline-none focus:ring-2 focus:ring-gold"
                 />
               </div>
 
               {/* Child's Age (Required) */}
               <div>
-                <label htmlFor="childAge" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
+                <label htmlFor="childAge" className="block text-xs font-bold uppercase tracking-wider text-ink mb-1">
                   Child's Age <span className="text-blue">*</span>
                 </label>
                 <input
@@ -168,18 +181,19 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
                   id="childAge"
                   name="childAge"
                   required
+                  aria-required="true"
                   value={formData.childAge}
                   onChange={handleChange}
                   placeholder="e.g., 3 years old"
-                  className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-gold"
+                  className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/50 focus:outline-none focus:ring-2 focus:ring-gold"
                 />
               </div>
             </div>
 
             {/* Short Message (Optional) */}
             <div>
-              <label htmlFor="message" className="block text-xs font-bold uppercase tracking-wider text-ink/80 mb-1">
-                Message <span className="text-ink/40 text-[10px] font-normal">(Optional)</span>
+              <label htmlFor="message" className="block text-xs font-bold uppercase tracking-wider text-ink mb-1">
+                Message <span className="text-ink/60 text-[10px] font-normal">(Optional)</span>
               </label>
               <textarea
                 id="message"
@@ -188,7 +202,7 @@ export const TourModal: React.FC<TourModalProps> = ({ isOpen, onClose }) => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us a bit about your child..."
-                className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-gold resize-none"
+                className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-2.5 text-sm text-ink placeholder:text-ink/50 focus:outline-none focus:ring-2 focus:ring-gold resize-none"
               />
             </div>
 
