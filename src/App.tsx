@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { PathSection } from './components/PathSection';
 import { CloserLookSection } from './components/CloserLookSection';
 import { ValuesSection } from './components/ValuesSection';
+import { StaffSection } from './components/StaffSection';
 import { InchstonesSection } from './components/InchstonesSection';
 import { MissionBand } from './components/MissionBand';
 import { CampaignsSection } from './components/CampaignsSection';
@@ -21,6 +22,7 @@ function HomePage() {
         <CloserLookSection />
         <PathSection />
         <ValuesSection />
+        <StaffSection />
         <InchstonesSection />
         <MissionBand />
         <CampaignsSection />

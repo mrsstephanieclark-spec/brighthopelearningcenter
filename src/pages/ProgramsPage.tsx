@@ -4,6 +4,8 @@ import { Footer } from '../components/Footer';
 import { TourModal } from '../components/TourModal';
 import { Sun, Heart, Sparkles, Award, Compass, ShieldCheck, Activity, MessageSquare, ChevronDown, Clock } from 'lucide-react';
 
+import { StaffSection } from '../components/StaffSection';
+
 interface FAQItem {
   id: string;
   question: string;
@@ -371,7 +373,10 @@ export const ProgramsPage: React.FC = () => {
         </section>
 
 
-        {/* 6. SHORT FAQ ACCORDION */}
+        {/* 6. STAFF / LEADERSHIP SECTION */}
+        <StaffSection />
+
+        {/* 7. SHORT FAQ ACCORDION */}
         <section className="py-16 md:py-24 bg-paper-raised transition-colors duration-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             
