@@ -90,10 +90,10 @@ export const Hero: React.FC = () => {
           {/* Right Column: Photo Card */}
           <div className="lg:col-span-4 hidden lg:block">
             <div className="relative rounded-3xl p-4 bg-white border border-white/20 shadow-2xl space-y-3">
-              <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-inner border border-ink/10">
+              <div className="w-full aspect-[1200/1134] rounded-2xl overflow-hidden relative shadow-inner border border-ink/10">
                 <img 
                   src="/assets/images/hero-girl-physical-therapy.jpg" 
-                  alt="Young student celebrating joyfully during physical therapy exercises with a Bright Hope specialist" 
+                  alt="Young student smiling brightly in an adaptive mobility walker guided by a Bright Hope specialist" 
                   className="w-full h-full object-cover object-center" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 pointer-events-none">
