@@ -163,59 +163,65 @@ export const ProgramsPage: React.FC = () => {
         </section>
 
 
-        {/* 3. EARLY INTERVENTION, EXPLAINED PLAINLY */}
-        <section className="py-16 md:py-24 bg-paper transition-colors duration-200 border-b border-ink/10">
+        {/* 3. EARLY INTERVENTION, EXPLAINED PLAINLY - BOLD BRAND GOLD BACKGROUND */}
+        <section className="py-16 md:py-24 bg-[#FFD200] transition-colors duration-200 border-b border-[#051C3B]/10 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-blue px-3.5 py-1.5 rounded-full shadow-xs">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-[#0B4EA2] px-4 py-1.5 rounded-full shadow-sm border border-white/20">
                 Understanding Early Intervention
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-[#051C3B]">
                 What early intervention means — and why acting early matters.
               </h2>
-              <p className="text-base sm:text-lg text-ink/80 font-sans leading-relaxed">
+              <p className="text-base sm:text-lg text-[#051C3B]/90 font-sans leading-relaxed font-medium">
                 The early childhood years — between ages 1 and 5 — represent the most significant window of brain development in a child's life. "Early intervention" simply means providing specialized support, therapy, and developmental tools right when a delay or diagnosis is identified, rather than taking a "wait-and-see" approach.
               </p>
             </div>
 
-            {/* 3 Pillars Grid */}
+            {/* 3 Pillars Grid - White Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-blue transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-blue text-white flex items-center justify-center font-bold mb-4 shadow-sm">
-                  <Sparkles className="w-6 h-6" />
+              <div className="p-8 rounded-3xl bg-white border-t-4 border-[#0B4EA2] border-x border-b border-black/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-[#0B4EA2] text-white flex items-center justify-center font-bold mb-4 shadow-sm">
+                    <Sparkles className="w-6 h-6 text-[#FFD200]" />
+                  </div>
+                  <h3 className="text-xl font-bold font-heading text-ink mb-3">
+                    Unlocking Early Potential
+                  </h3>
+                  <p className="text-sm text-ink/80 leading-relaxed font-sans">
+                    During ages 1–5, young brains are extraordinarily adaptable. Introducing targeted speech, physical, and occupational therapy early creates neural pathways that make learning and skill-building faster and more natural.
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold font-heading text-ink mb-3">
-                  Unlocking Early Potential
-                </h3>
-                <p className="text-sm text-ink/80 leading-relaxed font-sans">
-                  During ages 1–5, young brains are extraordinarily adaptable. Introducing targeted speech, physical, and occupational therapy early creates neural pathways that make learning and skill-building faster and more natural.
-                </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-gold transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-gold text-ink flex items-center justify-center font-bold mb-4 shadow-sm">
-                  <Heart className="w-6 h-6 fill-ink/20 text-ink" />
+              <div className="p-8 rounded-3xl bg-white border-t-4 border-[#051C3B] border-x border-b border-black/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-[#051C3B] text-[#FFD200] flex items-center justify-center font-bold mb-4 shadow-sm">
+                    <Heart className="w-6 h-6 fill-[#FFD200]/20 text-[#FFD200]" />
+                  </div>
+                  <h3 className="text-xl font-bold font-heading text-ink mb-3">
+                    Building Family Confidence
+                  </h3>
+                  <p className="text-sm text-ink/80 leading-relaxed font-sans">
+                    Early intervention doesn't just support the child — it equips parents and families with practical strategies, encouragement, and a supportive team walking beside them every step of the way.
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold font-heading text-ink mb-3">
-                  Building Family Confidence
-                </h3>
-                <p className="text-sm text-ink/80 leading-relaxed font-sans">
-                  Early intervention doesn't just support the child — it equips parents and families with practical strategies, encouragement, and a supportive team walking beside them every step of the way.
-                </p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-green transition-all duration-200">
-                <div className="w-12 h-12 rounded-2xl bg-green-secondary text-white flex items-center justify-center font-bold mb-4 shadow-sm">
-                  <Award className="w-6 h-6" />
+              <div className="p-8 rounded-3xl bg-white border-t-4 border-[#2E7D32] border-x border-b border-black/10 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-[#2E7D32] text-white flex items-center justify-center font-bold mb-4 shadow-sm">
+                    <Award className="w-6 h-6 text-[#FFD200]" />
+                  </div>
+                  <h3 className="text-xl font-bold font-heading text-ink mb-3">
+                    Preparing for School & Life
+                  </h3>
+                  <p className="text-sm text-ink/80 leading-relaxed font-sans">
+                    By addressing fine motor, mobility, language, and social skills early, children gain the foundational independence they need to transition successfully into future learning environments.
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold font-heading text-ink mb-3">
-                  Preparing for School & Life
-                </h3>
-                <p className="text-sm text-ink/80 leading-relaxed font-sans">
-                  By addressing fine motor, mobility, language, and social skills early, children gain the foundational independence they need to transition successfully into future learning environments.
-                </p>
               </div>
 
             </div>
