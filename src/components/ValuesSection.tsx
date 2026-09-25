@@ -9,6 +9,9 @@ interface ValueItem {
   colorHex: string;
   bgHex: string;
   borderHex: string;
+  inactiveBgHex: string;
+  inactiveBorderHex: string;
+  inactiveTextColor: string;
 }
 
 export const ValuesSection: React.FC = () => {
@@ -20,8 +23,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We believe God has a purpose for every child and faithfully pursue excellence, trusting Him to accomplish more than we can imagine.',
       colorName: 'blue',
       colorHex: '#0B4EA2',
-      bgHex: 'rgba(11, 78, 162, 0.1)',
+      bgHex: 'rgba(11, 78, 162, 0.15)',
       borderHex: '#0B4EA2',
+      inactiveBgHex: 'rgba(11, 78, 162, 0.08)',
+      inactiveBorderHex: 'rgba(11, 78, 162, 0.25)',
+      inactiveTextColor: 'text-[#0B4EA2]'
     },
     {
       id: 'hope',
@@ -30,8 +36,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We believe every child has God-given potential, and we inspire hope by focusing on possibilities rather than limitations.',
       colorName: 'gold',
       colorHex: '#FFD200',
-      bgHex: 'rgba(255, 210, 0, 0.15)',
+      bgHex: 'rgba(255, 210, 0, 0.25)',
       borderHex: '#FFD200',
+      inactiveBgHex: 'rgba(255, 210, 0, 0.18)',
+      inactiveBorderHex: 'rgba(255, 210, 0, 0.4)',
+      inactiveTextColor: 'text-[#051C3B]'
     },
     {
       id: 'love',
@@ -40,8 +49,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We love every child and family with the unconditional, compassionate love of Christ, seeing each person as uniquely created by God.',
       colorName: 'green',
       colorHex: '#7FBF3F',
-      bgHex: 'rgba(127, 191, 63, 0.1)',
+      bgHex: 'rgba(127, 191, 63, 0.15)',
       borderHex: '#7FBF3F',
+      inactiveBgHex: 'rgba(127, 191, 63, 0.12)',
+      inactiveBorderHex: 'rgba(127, 191, 63, 0.3)',
+      inactiveTextColor: 'text-[#2E7D32]'
     },
     {
       id: 'community',
@@ -50,8 +62,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We build meaningful relationships where children, families, staff, and community partners encourage and strengthen each other.',
       colorName: 'blue',
       colorHex: '#0B4EA2',
-      bgHex: 'rgba(11, 78, 162, 0.1)',
+      bgHex: 'rgba(11, 78, 162, 0.15)',
       borderHex: '#0B4EA2',
+      inactiveBgHex: 'rgba(11, 78, 162, 0.08)',
+      inactiveBorderHex: 'rgba(11, 78, 162, 0.25)',
+      inactiveTextColor: 'text-[#0B4EA2]'
     },
     {
       id: 'celebration',
@@ -60,8 +75,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We joyfully celebrate every step forward. Even the smallest inchstone represents courage, growth, and God\'s faithfulness.',
       colorName: 'gold',
       colorHex: '#FFD200',
-      bgHex: 'rgba(255, 210, 0, 0.15)',
+      bgHex: 'rgba(255, 210, 0, 0.25)',
       borderHex: '#FFD200',
+      inactiveBgHex: 'rgba(255, 210, 0, 0.18)',
+      inactiveBorderHex: 'rgba(255, 210, 0, 0.4)',
+      inactiveTextColor: 'text-[#051C3B]'
     },
     {
       id: 'innovation',
@@ -70,8 +88,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We embrace evidence-based practices, creativity, and collaboration to help every child learn, grow, and thrive.',
       colorName: 'green-secondary',
       colorHex: '#2E7D32',
-      bgHex: 'rgba(46, 125, 50, 0.1)',
+      bgHex: 'rgba(46, 125, 50, 0.15)',
       borderHex: '#2E7D32',
+      inactiveBgHex: 'rgba(46, 125, 50, 0.1)',
+      inactiveBorderHex: 'rgba(46, 125, 50, 0.25)',
+      inactiveTextColor: 'text-[#2E7D32]'
     },
     {
       id: 'stewardship',
@@ -80,8 +101,11 @@ export const ValuesSection: React.FC = () => {
       description: 'We honor God by wisely managing every resource, relationship, and opportunity entrusted to us, maximizing our impact for children and families.',
       colorName: 'green',
       colorHex: '#7FBF3F',
-      bgHex: 'rgba(127, 191, 63, 0.1)',
+      bgHex: 'rgba(127, 191, 63, 0.15)',
       borderHex: '#7FBF3F',
+      inactiveBgHex: 'rgba(127, 191, 63, 0.12)',
+      inactiveBorderHex: 'rgba(127, 191, 63, 0.3)',
+      inactiveTextColor: 'text-[#2E7D32]'
     },
   ];
 
@@ -139,11 +163,11 @@ export const ValuesSection: React.FC = () => {
                 className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full font-bold text-sm sm:text-base transition-all duration-200 border outline-none focus-visible:ring-2 focus-visible:ring-gold ${
                   isSelected
                     ? 'shadow-md scale-105 border-ink/20 text-ink'
-                    : 'bg-paper-raised text-ink/70 border-ink/10 hover:border-ink/30 hover:text-ink'
+                    : `${val.inactiveTextColor} hover:opacity-85`
                 }`}
                 style={{
-                  backgroundColor: isSelected ? val.bgHex : undefined,
-                  borderColor: isSelected ? val.colorHex : undefined,
+                  backgroundColor: isSelected ? val.bgHex : val.inactiveBgHex,
+                  borderColor: isSelected ? val.colorHex : val.inactiveBorderHex,
                 }}
               >
                 <span 

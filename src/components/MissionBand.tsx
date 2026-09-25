@@ -16,8 +16,8 @@ export const MissionBand: React.FC = () => {
     <section className="py-16 md:py-20 bg-paper transition-colors duration-200 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Main Card */}
-        <div className="rounded-3xl p-8 sm:p-12 lg:p-16 bg-blue/10 border border-blue/20 shadow-lg relative overflow-hidden">
+        {/* Main Card with Soft Brand Gradient Wash */}
+        <div className="rounded-3xl p-8 sm:p-12 lg:p-16 bg-gradient-to-br from-[#0B4EA2]/10 via-[#0B4EA2]/5 to-[#FFD200]/15 border border-[#0B4EA2]/20 shadow-lg relative overflow-hidden">
           
           {/* Subtle background glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none" />
