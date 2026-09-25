@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, BookOpen, Compass, Heart } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface CloserLookCard {
   id: string;
@@ -9,9 +9,9 @@ interface CloserLookCard {
   imageSrc: string;
   imageAlt: string;
   linkHref: string;
-  badgeColor: string;
-  badgeText: string;
-  icon: React.ReactNode;
+  badgeTextColor: string;
+  topBorderColor: string;
+  buttonClass: string;
 }
 
 export const CloserLookSection: React.FC = () => {
@@ -24,9 +24,9 @@ export const CloserLookSection: React.FC = () => {
       imageSrc: '/assets/images/our-story-square.jpg',
       imageAlt: 'Young student stepping carefully across sensory stepping tiles guided by a Bright Hope teacher',
       linkHref: '/#values',
-      badgeColor: 'text-white bg-blue',
-      badgeText: 'text-blue',
-      icon: <BookOpen className="w-4 h-4" />
+      badgeTextColor: 'text-[#0B4EA2]',
+      topBorderColor: 'border-t-4 border-[#0B4EA2]',
+      buttonClass: 'bg-[#0B4EA2] hover:bg-[#09428B] text-white font-bold focus-visible:ring-2 focus-visible:ring-[#0B4EA2]'
     },
     {
       id: 'services',
@@ -36,9 +36,9 @@ export const CloserLookSection: React.FC = () => {
       imageSrc: '/assets/images/our-services-square.jpg',
       imageAlt: 'Child completing hands-on picture card sorting activities with colorful rhyming houses during speech session',
       linkHref: '/programs',
-      badgeColor: 'text-white bg-green-secondary',
-      badgeText: 'text-green-secondary',
-      icon: <Compass className="w-4 h-4" />
+      badgeTextColor: 'text-[#2E7D32]',
+      topBorderColor: 'border-t-4 border-[#7FBF3F]',
+      buttonClass: 'bg-[#7FBF3F] hover:bg-[#70aa37] text-[#051C3B] font-extrabold focus-visible:ring-2 focus-visible:ring-[#7FBF3F]'
     },
     {
       id: 'needs',
@@ -48,9 +48,9 @@ export const CloserLookSection: React.FC = () => {
       imageSrc: '/assets/images/our-needs-square.jpg',
       imageAlt: 'Bright Hope specialist guiding a child in adaptive seating through shape puzzle exercises next to an AAC speech device',
       linkHref: '/#give',
-      badgeColor: 'text-white bg-green-secondary',
-      badgeText: 'text-green-secondary',
-      icon: <Heart className="w-4 h-4" />
+      badgeTextColor: 'text-[#051C3B] font-extrabold',
+      topBorderColor: 'border-t-4 border-[#FFD200]',
+      buttonClass: 'bg-[#FFD200] hover:bg-[#e6bd00] text-[#051C3B] font-extrabold focus-visible:ring-2 focus-visible:ring-[#FFD200]'
     }
   ];
 
@@ -61,7 +61,7 @@ export const CloserLookSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-4">
-          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase bg-gold text-ink px-3.5 py-1.5 rounded-full shadow-xs">
+          <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase bg-[#FFD200] text-[#051C3B] px-3.5 py-1.5 rounded-full shadow-xs">
             Explore Bright Hope
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -72,12 +72,12 @@ export const CloserLookSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 3 Horizontal Cards Grid */}
+        {/* 3 Horizontal Cards Grid with Distinct Blue/Green/Gold Identities */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {cards.map((card) => (
             <div
               key={card.id}
-              className="group rounded-3xl border border-ink/10 bg-paper-raised p-6 sm:p-7 shadow-sm hover:shadow-lg hover:border-gold transition-all duration-300 flex flex-col justify-between h-full"
+              className={`group rounded-3xl ${card.topBorderColor} border-x border-b border-ink/10 bg-paper-raised p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full`}
             >
               <div>
                 {/* Square Photo Container */}
@@ -91,12 +91,12 @@ export const CloserLookSection: React.FC = () => {
                 </div>
 
                 {/* Subtitle */}
-                <span className={`inline-block text-xs font-bold tracking-wider uppercase ${card.badgeText} mb-1.5`}>
+                <span className={`inline-block text-xs font-extrabold tracking-wider uppercase ${card.badgeTextColor} mb-1.5`}>
                   {card.subtitle}
                 </span>
 
                 {/* Title */}
-                <h3 className="text-2xl font-bold font-heading text-ink mb-3 group-hover:text-blue transition-colors">
+                <h3 className="text-2xl font-bold font-heading text-ink mb-3 group-hover:text-[#0B4EA2] transition-colors">
                   {card.title}
                 </h3>
 
@@ -110,10 +110,10 @@ export const CloserLookSection: React.FC = () => {
               <div className="pt-2 mt-auto">
                 <a
                   href={card.linkHref}
-                  className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-5 py-3 rounded-xl transition-all duration-200 text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-gold outline-none w-full text-center group/btn"
+                  className={`inline-flex items-center justify-center gap-2 ${card.buttonClass} px-5 py-3 rounded-xl transition-all duration-200 text-sm shadow-sm outline-none w-full text-center group/btn`}
                 >
                   <span>Learn More</span>
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform text-ink" />
+                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
