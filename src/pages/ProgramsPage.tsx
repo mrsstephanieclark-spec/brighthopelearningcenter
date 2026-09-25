@@ -51,30 +51,30 @@ export const ProgramsPage: React.FC = () => {
 
       <main className="flex-grow">
         
-        {/* 1. HERO / INTRO SECTION */}
-        <section className="relative overflow-hidden py-16 md:py-24 bg-paper transition-colors duration-200 border-b border-ink/10">
+        {/* 1. HERO / INTRO SECTION - BOLD BRAND TREATMENT */}
+        <section className="relative overflow-hidden py-16 md:py-24 bg-gradient-to-br from-[#0B4EA2] via-[#09428B] to-[#051C3B] text-white transition-colors duration-200 border-b border-white/10 shadow-xl">
           
           {/* Subtle background glow highlights */}
-          <div className="absolute -top-24 -left-24 w-96 h-96 bg-gold/15 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute top-1/2 -right-24 w-96 h-96 bg-blue/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-[#FFD200]/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-1/2 -right-24 w-96 h-96 bg-[#7FBF3F]/15 rounded-full blur-3xl pointer-events-none" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             <div className="max-w-3xl space-y-6">
               
               {/* Eyebrow */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue text-white font-bold text-sm tracking-wide shadow-xs">
-                <Sun className="w-4 h-4 text-gold" />
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 border border-white/25 backdrop-blur-md text-white font-bold text-sm tracking-wide shadow-xs">
+                <Sun className="w-4 h-4 text-[#FFD200]" />
                 <span>Bright Hope Learning Center · Programs & Services</span>
               </div>
 
               {/* Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-ink leading-tight tracking-tight">
-                Early intervention that meets kids <span className="text-blue underline decoration-gold decoration-4 underline-offset-4">exactly where they are.</span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-white leading-tight tracking-tight">
+                Early intervention that meets kids <span className="text-[#FFD200] underline decoration-[#FFD200] decoration-4 underline-offset-4">exactly where they are.</span>
               </h1>
 
               {/* Subhead (1-2 sentences) */}
-              <p className="text-lg sm:text-xl text-ink/80 leading-relaxed font-sans">
-                Bright Hope serves children ages 1–5 with special needs, providing Christ-centered early intervention, education, and therapy — <strong className="text-ink font-extrabold">completely tuition-free</strong>.
+              <p className="text-lg sm:text-xl text-white/90 leading-relaxed font-sans">
+                Bright Hope serves children ages 1–5 with special needs, providing Christ-centered early intervention, education, and therapy — <strong className="text-white font-extrabold">completely tuition-free</strong>.
               </p>
 
               {/* CTA Buttons */}
@@ -82,15 +82,15 @@ export const ProgramsPage: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setIsTourModalOpen(true)}
-                  className="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold/90 text-ink font-bold px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-ink outline-none cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 bg-[#FFD200] hover:bg-[#e6bd00] text-[#051C3B] font-extrabold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-white outline-none cursor-pointer"
                 >
-                  <Heart className="w-5 h-5 fill-ink/20 text-ink" />
+                  <Heart className="w-5 h-5 fill-[#051C3B]/20 text-[#051C3B]" />
                   <span>Request a Tour</span>
                 </button>
 
                 <a
                   href="#therapies"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-blue text-blue hover:bg-blue hover:text-white font-bold px-7 py-3.5 rounded-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-blue outline-none"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#0B4EA2] font-bold px-7 py-3.5 rounded-xl transition-all duration-200 text-base focus-visible:ring-2 focus-visible:ring-white outline-none"
                 >
                   <Activity className="w-5 h-5" />
                   <span>Explore Therapies</span>
@@ -115,7 +115,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             <div className="max-w-4xl mx-auto space-y-6 bg-paper p-8 sm:p-12 rounded-3xl border border-ink/10 shadow-md">
               
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green-secondary px-3.5 py-1.5 rounded-full shadow-xs">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-[#2E7D32] px-3.5 py-1.5 rounded-full shadow-xs">
                 Our Purpose & Approach
               </span>
 
@@ -127,26 +127,34 @@ export const ProgramsPage: React.FC = () => {
                 Bright Hope Learning Center is a specialized early intervention and educational program — not a custodial daycare. Built around licensed special education teachers and therapists, individualized service plans, and evidence-based early-intervention practices, our program provides structured therapeutic learning environments tailored specifically for children ages 1–5 with special needs. Every classroom experience, activity, and therapy session is intentionally designed by credentialed professionals to foster independence, communication, and developmental growth — completely tuition-free for every family.
               </p>
 
-              {/* 4 Feature Badges */}
+              {/* 4 Feature Stat Chips - Bold Brand Color Treatment */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
-                  <Award className="w-5 h-5 text-blue shrink-0" />
-                  <span className="text-sm font-bold font-heading text-ink">Licensed Therapists & Educators</span>
+                <div className="flex items-center gap-3.5 p-4 rounded-xl bg-[#0B4EA2] text-white shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
+                  <div className="p-2 rounded-lg bg-white/15 shrink-0">
+                    <Award className="w-5 h-5 text-[#FFD200]" />
+                  </div>
+                  <span className="text-sm sm:text-base font-bold font-heading text-white">Licensed Therapists & Educators</span>
                 </div>
 
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
-                  <Compass className="w-5 h-5 text-green shrink-0" />
-                  <span className="text-sm font-bold font-heading text-ink">Individualized Service Plans</span>
+                <div className="flex items-center gap-3.5 p-4 rounded-xl bg-[#2E7D32] text-white shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
+                  <div className="p-2 rounded-lg bg-white/15 shrink-0">
+                    <Compass className="w-5 h-5 text-[#FFD200]" />
+                  </div>
+                  <span className="text-sm sm:text-base font-bold font-heading text-white">Individualized Service Plans</span>
                 </div>
 
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
-                  <Activity className="w-5 h-5 text-gold shrink-0" />
-                  <span className="text-sm font-bold font-heading text-ink">Evidence-Based Practices</span>
+                <div className="flex items-center gap-3.5 p-4 rounded-xl bg-[#FFD200] text-[#051C3B] shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
+                  <div className="p-2 rounded-lg bg-[#051C3B]/10 shrink-0">
+                    <Activity className="w-5 h-5 text-[#051C3B]" />
+                  </div>
+                  <span className="text-sm sm:text-base font-extrabold font-heading text-[#051C3B]">Evidence-Based Practices</span>
                 </div>
 
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-paper-raised border border-ink/10">
-                  <ShieldCheck className="w-5 h-5 text-green-secondary shrink-0" />
-                  <span className="text-sm font-bold font-heading text-ink">100% Tuition-Free for Families</span>
+                <div className="flex items-center gap-3.5 p-4 rounded-xl bg-[#0B4EA2] text-white shadow-sm transition-transform duration-200 hover:-translate-y-0.5">
+                  <div className="p-2 rounded-lg bg-white/15 shrink-0">
+                    <ShieldCheck className="w-5 h-5 text-[#FFD200]" />
+                  </div>
+                  <span className="text-sm sm:text-base font-bold font-heading text-white">100% Tuition-Free for Families</span>
                 </div>
               </div>
 
@@ -216,7 +224,7 @@ export const ProgramsPage: React.FC = () => {
         </section>
 
 
-        {/* 4. THERAPIES OFFERED */}
+        {/* 4. THERAPIES OFFERED - BOLD DISTINCT BRAND COLOR ACCENTS */}
         <section id="therapies" className="py-16 md:py-24 bg-paper-raised border-b border-ink/10 transition-colors duration-200 relative overflow-hidden">
           
           {/* Decorative path line */}
@@ -229,7 +237,7 @@ export const ProgramsPage: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-green-secondary px-3.5 py-1.5 rounded-full shadow-xs">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-[#0B4EA2] px-3.5 py-1.5 rounded-full shadow-xs">
                 Comprehensive Care
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -240,14 +248,14 @@ export const ProgramsPage: React.FC = () => {
               </p>
             </div>
 
-            {/* 3 Therapy Cards */}
+            {/* 3 Therapy Cards with Distinct Brand Accent Colors */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               
-              {/* Occupational Therapy */}
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-green/50 transition-all duration-200 flex flex-col justify-between">
+              {/* Occupational Therapy - Green Accent */}
+              <div className="p-8 rounded-3xl bg-paper border-t-4 border-[#2E7D32] border-x border-b border-ink/10 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-green/15 text-green flex items-center justify-center font-bold mb-5">
-                    <Activity className="w-6 h-6" />
+                  <div className="w-14 h-14 rounded-2xl bg-[#2E7D32] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+                    <Activity className="w-7 h-7" />
                   </div>
                   <h3 className="text-2xl font-bold font-heading text-ink mb-3">
                     Occupational Therapy (OT)
@@ -256,16 +264,16 @@ export const ProgramsPage: React.FC = () => {
                     Occupational therapy helps children develop fine motor skills, sensory processing balance, and self-care abilities needed for daily life. From grasping a pencil to buttoning a coat or trying new textures, OT builds practical independence and motor confidence.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-green flex items-center gap-1.5">
-                  <span>✦ Fine Motor & Sensory Processing</span>
+                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-[#2E7D32] flex items-center gap-1.5">
+                  <span className="px-3 py-1 rounded-full bg-[#2E7D32]/10 border border-[#2E7D32]/20">✦ Fine Motor & Sensory Processing</span>
                 </div>
               </div>
 
-              {/* Physical Therapy */}
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-gold/50 transition-all duration-200 flex flex-col justify-between">
+              {/* Physical Therapy - Gold Accent */}
+              <div className="p-8 rounded-3xl bg-paper border-t-4 border-[#FFD200] border-x border-b border-ink/10 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-gold/25 text-ink flex items-center justify-center font-bold mb-5">
-                    <Compass className="w-6 h-6 text-gold" />
+                  <div className="w-14 h-14 rounded-2xl bg-[#FFD200] text-[#051C3B] flex items-center justify-center font-bold mb-5 shadow-sm">
+                    <Compass className="w-7 h-7 text-[#051C3B]" />
                   </div>
                   <h3 className="text-2xl font-bold font-heading text-ink mb-3">
                     Physical Therapy (PT)
@@ -274,16 +282,16 @@ export const ProgramsPage: React.FC = () => {
                     Physical therapy focuses on gross motor strength, balance, coordination, and mobility. PT supports children in achieving physical milestones — whether learning to sit independently, walk with confidence, or navigate their environment safely.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-gold flex items-center gap-1.5">
-                  <span>✦ Gross Motor & Mobility Milestones</span>
+                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-[#051C3B] flex items-center gap-1.5">
+                  <span className="px-3 py-1 rounded-full bg-[#FFD200]/30 border border-[#FFD200]/50">✦ Gross Motor & Mobility Milestones</span>
                 </div>
               </div>
 
-              {/* Speech-Language Therapy */}
-              <div className="p-8 rounded-3xl bg-paper-raised border border-ink/10 shadow-sm hover:shadow-md hover:border-blue/50 transition-all duration-200 flex flex-col justify-between">
+              {/* Speech-Language Therapy - Blue Accent */}
+              <div className="p-8 rounded-3xl bg-paper border-t-4 border-[#0B4EA2] border-x border-b border-ink/10 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-2xl bg-blue/15 text-blue flex items-center justify-center font-bold mb-5">
-                    <MessageSquare className="w-6 h-6 text-blue" />
+                  <div className="w-14 h-14 rounded-2xl bg-[#0B4EA2] text-white flex items-center justify-center font-bold mb-5 shadow-sm">
+                    <MessageSquare className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold font-heading text-ink mb-3">
                     Speech-Language Therapy (SLP)
@@ -292,8 +300,8 @@ export const ProgramsPage: React.FC = () => {
                     Speech-language therapy helps children express their thoughts, understand language, and connect with the world around them. SLP addresses speech clarity, non-verbal communication tools, social interaction, and safe feeding/swallowing skills.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-blue flex items-center gap-1.5">
-                  <span>✦ Expressive & Receptive Communication</span>
+                <div className="mt-6 pt-4 border-t border-ink/10 text-xs font-bold text-[#0B4EA2] flex items-center gap-1.5">
+                  <span className="px-3 py-1 rounded-full bg-[#0B4EA2]/10 border border-[#0B4EA2]/20">✦ Expressive & Receptive Communication</span>
                 </div>
               </div>
 
@@ -303,13 +311,12 @@ export const ProgramsPage: React.FC = () => {
         </section>
 
 
-        {/* 5. WHAT A DAY LOOKS LIKE */}
-        {/* NOTE: Placeholder detail - needs Kerry's confirmation/refinement for exact day-to-day schedule */}
+        {/* 5. WHAT A DAY LOOKS LIKE - BOLD BRAND TIMELINE MARKERS */}
         <section className="py-16 md:py-24 bg-paper transition-colors duration-200 border-b border-ink/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             
             <div className="max-w-3xl mx-auto text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-green bg-green/10 px-3.5 py-1.5 rounded-full border border-green/20">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-[#2E7D32] px-3.5 py-1.5 rounded-full shadow-xs">
                 Daily Experience
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-heading text-ink">
@@ -323,9 +330,9 @@ export const ProgramsPage: React.FC = () => {
             {/* Day Flow Timeline Grid */}
             <div className="max-w-4xl mx-auto space-y-4">
               
-              <div className="p-6 rounded-2xl bg-paper-raised border border-ink/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <div className="px-3.5 py-1.5 rounded-full bg-blue/10 text-blue font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5" />
+              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#0B4EA2] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="px-4 py-2 rounded-xl bg-[#0B4EA2] text-white font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
+                  <Clock className="w-4 h-4 text-[#FFD200]" />
                   <span>Morning</span>
                 </div>
                 <div>
@@ -334,9 +341,9 @@ export const ProgramsPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-paper-raised border border-ink/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <div className="px-3.5 py-1.5 rounded-full bg-gold/25 text-ink font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5" />
+              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#FFD200] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="px-4 py-2 rounded-xl bg-[#FFD200] text-[#051C3B] font-extrabold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
+                  <Clock className="w-4 h-4 text-[#051C3B]" />
                   <span>Mid-Morning</span>
                 </div>
                 <div>
@@ -345,9 +352,9 @@ export const ProgramsPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-paper-raised border border-ink/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <div className="px-3.5 py-1.5 rounded-full bg-green/15 text-green font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5" />
+              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#7FBF3F] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="px-4 py-2 rounded-xl bg-[#7FBF3F] text-[#051C3B] font-extrabold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
+                  <Clock className="w-4 h-4 text-[#051C3B]" />
                   <span>Mid-Day</span>
                 </div>
                 <div>
@@ -356,9 +363,9 @@ export const ProgramsPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-6 rounded-2xl bg-paper-raised border border-ink/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                <div className="px-3.5 py-1.5 rounded-full bg-green-secondary/15 text-green-secondary font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5" />
+              <div className="p-6 rounded-2xl bg-paper-raised border-l-4 border-[#2E7D32] border-r border-y border-ink/10 shadow-xs flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="px-4 py-2 rounded-xl bg-[#2E7D32] text-white font-bold text-xs uppercase tracking-wider shrink-0 flex items-center gap-2 shadow-xs">
+                  <Clock className="w-4 h-4 text-[#FFD200]" />
                   <span>Afternoon</span>
                 </div>
                 <div>
@@ -376,12 +383,12 @@ export const ProgramsPage: React.FC = () => {
         {/* 6. STAFF / LEADERSHIP SECTION */}
         <StaffSection />
 
-        {/* 7. SHORT FAQ ACCORDION */}
+        {/* 7. SHORT FAQ ACCORDION - BOLD BRAND ACCENT */}
         <section className="py-16 md:py-24 bg-paper-raised transition-colors duration-200">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             
             <div className="text-center mb-14 space-y-4">
-              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-blue bg-blue/10 px-3.5 py-1.5 rounded-full border border-blue/20">
+              <span className="inline-block text-xs sm:text-sm font-bold tracking-widest uppercase text-white bg-[#0B4EA2] px-3.5 py-1.5 rounded-full shadow-xs">
                 Frequently Asked Questions
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold font-heading text-ink">
@@ -398,7 +405,7 @@ export const ProgramsPage: React.FC = () => {
                   <div
                     key={faq.id}
                     className={`rounded-2xl border transition-all duration-200 bg-paper ${
-                      isOpen ? 'border-blue ring-2 ring-blue/20' : 'border-ink/10'
+                      isOpen ? 'border-[#0B4EA2] ring-2 ring-[#0B4EA2]/20 shadow-sm' : 'border-ink/10 hover:border-[#0B4EA2]/50'
                     }`}
                   >
                     <button
@@ -406,12 +413,12 @@ export const ProgramsPage: React.FC = () => {
                       onClick={() => toggleFAQ(faq.id)}
                       aria-expanded={isOpen}
                       aria-controls={`faq-answer-${faq.id}`}
-                      className="w-full text-left p-6 flex items-center justify-between gap-4 focus-visible:ring-2 focus-visible:ring-gold rounded-2xl outline-none cursor-pointer"
+                      className="w-full text-left p-6 flex items-center justify-between gap-4 focus-visible:ring-2 focus-visible:ring-[#0B4EA2] rounded-2xl outline-none cursor-pointer group"
                     >
-                      <span className="text-lg font-bold font-heading text-ink">
+                      <span className="text-lg font-bold font-heading text-[#0B4EA2] group-hover:text-[#09428B] transition-colors">
                         {faq.question}
                       </span>
-                      <div className={`p-1.5 rounded-full bg-paper-raised text-ink/70 transition-transform duration-200 shrink-0 ${isOpen ? 'rotate-180 bg-blue/10 text-blue' : ''}`}>
+                      <div className={`p-2 rounded-xl transition-all duration-200 shrink-0 ${isOpen ? 'bg-[#0B4EA2] text-white rotate-180' : 'bg-[#0B4EA2]/10 text-[#0B4EA2] group-hover:bg-[#0B4EA2]/20'}`}>
                         <ChevronDown className="w-5 h-5" />
                       </div>
                     </button>
@@ -419,7 +426,7 @@ export const ProgramsPage: React.FC = () => {
                     {isOpen && (
                       <div
                         id={`faq-answer-${faq.id}`}
-                        className="px-6 pb-6 pt-1 text-sm text-ink/85 leading-relaxed font-sans border-t border-ink/10 animate-fadeIn"
+                        className="px-6 pb-6 pt-1 text-sm sm:text-base text-ink/85 leading-relaxed font-sans border-t border-ink/10 animate-fadeIn"
                       >
                         {faq.answer}
                       </div>
