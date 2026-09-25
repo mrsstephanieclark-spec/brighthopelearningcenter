@@ -18,8 +18,8 @@ function HomePage() {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <PathSection />
         <CloserLookSection />
+        <PathSection />
         <ValuesSection />
         <InchstonesSection />
         <MissionBand />
