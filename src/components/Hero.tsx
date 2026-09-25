@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
             <div className="relative rounded-3xl p-4 bg-white border border-white/20 shadow-2xl space-y-3">
               <div className="w-full aspect-[1200/1134] rounded-2xl overflow-hidden relative shadow-inner border border-ink/10">
                 <img 
-                  src="/assets/images/hero-photo.jpg" 
+                  src="/assets/images/hero-photo-v3.jpg" 
                   alt="Bright Hope specialist guiding a young student in hands-on early intervention activities" 
                   className="w-full h-full object-cover object-center" 
                 />
