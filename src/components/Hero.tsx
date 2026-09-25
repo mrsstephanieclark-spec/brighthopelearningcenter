@@ -90,11 +90,11 @@ export const Hero: React.FC = () => {
           {/* Right Column: Photo Card */}
           <div className="lg:col-span-4 hidden lg:block">
             <div className="relative rounded-3xl p-4 bg-white border border-white/20 shadow-2xl space-y-3">
-              <div className="w-full aspect-[955/1024] rounded-2xl overflow-hidden relative shadow-inner border border-ink/10 bg-white">
+              <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden relative shadow-inner border border-ink/10">
                 <img 
                   src="/assets/images/hero-girl-physical-therapy.jpg" 
                   alt="Young student celebrating joyfully during physical therapy exercises with a Bright Hope specialist" 
-                  className="w-full h-full object-contain object-center" 
+                  className="w-full h-full object-cover object-center" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4 pointer-events-none">
                   <span className="text-xs font-bold text-white uppercase tracking-wider bg-[#0B4EA2] px-3 py-1 rounded-full shadow-sm">
@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
                 </div>
               </div>
 
-              <p className="text-xs font-bold text-ink/80 font-sans text-left">
+              <p className="text-xs font-bold text-ink font-sans text-left">
                 Christ-centered early intervention & specialized education in Shelbyville, KY.
               </p>
             </div>
