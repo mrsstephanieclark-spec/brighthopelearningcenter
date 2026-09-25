@@ -28,8 +28,8 @@ export const StaffSection: React.FC = () => {
       id: 'lead-educator',
       name: 'Special Education Team',
       role: 'Licensed Early Intervention Teachers',
-      imageSrc: '/assets/images/special-education-team-v3.jpg',
-      imageAlt: 'Bright Hope special education teacher smiling warmly while interacting with young students in a wooden rocker boat structure in the sensory playroom',
+      imageSrc: '/assets/images/special-education-team-v4.jpg',
+      imageAlt: 'A young student wearing noise-reducing headphones and seated in an adaptive chair, smiling while participating in a classroom activity at Bright Hope Learning Center.',
       specialtyBadge: 'Specialized Education',
       badgeBg: 'bg-blue text-white',
       bioSentence: 'Structuring warm, therapeutic learning environments tailored to each child\'s unique cognitive and social growth goals.'
