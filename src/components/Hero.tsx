@@ -13,13 +13,14 @@ export const Hero: React.FC = () => {
           muted
           playsInline
           controls={false}
-          poster="/assets/images/hero-therapy-session.jpg"
+          poster="/assets/images/hero-video-poster.jpg"
           className="w-full h-full object-cover object-center"
         >
           <source src="/assets/videos/hero-background.mp4" type="video/mp4" />
+          <source src="/assets/hero-background.MOV" type="video/quicktime" />
           <img 
-            src="/assets/images/hero-therapy-session.jpg" 
-            alt="Bright Hope early intervention specialist engaging a young boy during a floor therapy session" 
+            src="/assets/images/hero-video-poster.jpg" 
+            alt="Bright Hope Learning Center classroom in action" 
             className="w-full h-full object-cover object-center"
           />
         </video>
